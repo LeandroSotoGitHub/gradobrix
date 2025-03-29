@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <img src="../../../assets/img/logo__blanco__limpio.png" alt="logo-navbar" class="logo-navbar">
+
+  <button class="hamburger-menu" (click)="toggleMenu()">☰</button>
+
+  <ul class="nav-links" [ngClass]="{'active': isMenuOpen}">
+    <li><a routerLink="/home" (click)="closeMenu()">Inicio</a></li>
+    <li><a routerLink="/about" (click)="closeMenu()">Sobre nosotros</a></li>
+    <li><a routerLink="/menu" (click)="closeMenu()">Menú</a></li>
+    <li><a routerLink="/contact" (click)="closeMenu()">Contacto</a></li>
+  </ul>
+</nav>

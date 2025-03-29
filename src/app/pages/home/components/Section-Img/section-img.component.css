@@ -1,0 +1,52 @@
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #F4EDE3;
+  flex-direction: row; /* Por defecto, la imagen y el texto están en fila */
+}
+
+.boulangerie img {
+  width: 40vw;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+  max-width: 30vw;
+  text-align: left;
+  margin: 0 128px;
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 768px) {
+  .section {
+      height: 100vh;
+      flex-direction: column; /* La imagen y el texto se apilan en columna */
+      align-items: center;
+  }
+
+  .boulangerie img {
+      width: 100%; /* La imagen ocupa todo el ancho */
+      height: 40vh; /* Ajusta la altura automáticamente */
+  }
+
+  .text-container {
+      display: flex;
+      justify-content: center;
+      max-width: 90%; /* Ajuste para mejor visibilidad en móviles */
+      margin: 16px;
+      gap: 64px;
+      height: 100vh;
+  }
+}

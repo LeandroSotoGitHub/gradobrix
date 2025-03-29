@@ -1,0 +1,13 @@
+<section class="menu-container">
+    <h2 class="menu-title">Nuestro Menú</h2>
+    <p class="menu-subtitle">Categorías</p>
+  
+    <div class="menu-grid">
+      <app-card 
+        *ngFor="let category of categories"
+        [imageSrc]="category.imageSrc"
+        [title]="category.title">
+      </app-card>
+    </div>
+</section>
+  

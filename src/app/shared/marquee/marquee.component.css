@@ -1,0 +1,29 @@
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: #30291F; /* Fondo marrón oscuro */
+    padding: 20px 0;
+    position: relative;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 5vw; /* Espacio entre los logos */
+    animation: marquee-animation 120s linear infinite;
+    width: max-content; /* Asegura que el contenido sea más grande que el contenedor */
+}
+
+@keyframes marquee-animation {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%); /* Movimiento continuo sin cortes */
+    }
+}
+
+img {
+    height: 1.2rem; 
+    width: auto;
+}

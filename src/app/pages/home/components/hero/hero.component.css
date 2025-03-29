@@ -1,0 +1,52 @@
+.welcome-section {
+  position: relative;
+  width: 100vw;
+  height: 93vh;
+  background: url('/assets/img/img__hero__asesion.jpeg') no-repeat center center/cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.logo-img {
+  width: 30vw;
+  height: auto;
+  margin: 0;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 1024px) {
+  .logo-img {
+      width: 40vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+      width: 50vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+      width: 65vw;
+  }
+}

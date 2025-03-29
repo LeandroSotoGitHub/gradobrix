@@ -1,0 +1,5 @@
+<div class="slider-container">
+  <div class="slider-track" [style.transform]="getTransform()">
+    <img *ngFor="let img of images" [src]="img" alt="Historia imagen" />
+  </div>
+</div>

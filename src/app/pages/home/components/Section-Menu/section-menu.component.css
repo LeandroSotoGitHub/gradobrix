@@ -1,0 +1,23 @@
+.menu-container {
+    text-align: center;
+    background-color: #2d2d2d;
+    padding: 40px 20px;
+    color: white;
+  }
+  
+  .menu-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .menu-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .menu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  

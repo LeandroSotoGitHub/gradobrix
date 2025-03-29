@@ -1,0 +1,166 @@
+.sobre-nosotros {
+  display: flex;
+  justify-content: center;
+  background-color: #F1DFC6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Banner */
+.imagen-banner {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.imagen-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Texto izquierda - Imagen derecha */
+.texto-izquierda {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.imagen-derecha {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  align-items: center;
+}
+
+.imagen-derecha img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Texto derecha - Imagen izquierda */
+.imagen-izquierda {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.imagen-izquierda img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.texto-derecha {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ====== ESTILOS DE TEXTO ====== */
+.texto-izquierda p,
+.texto-derecha p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #2f2a25;
+  font-family: 'Gotham', sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.texto-izquierda h2,
+.texto-derecha h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1e1b17;
+  margin-bottom: 18px;
+}
+
+.subtitulo {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5c5245;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.titulo-izq {
+  margin-bottom: 28px;
+}
+
+.texto-derecha h2.gracias {
+  font-size: 38px;
+  font-weight: bold;
+  color: #1e1b17;
+  margin-top: 30px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .imagen-banner,
+  .imagen-derecha,
+  .imagen-izquierda {
+    width: 100%;
+  }
+
+  .imagen-banner img,
+  .imagen-derecha img,
+  .imagen-izquierda img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Reordenar elementos */
+  .texto-izquierda { order: 2; }
+  .imagen-derecha  { order: 1; }
+  .imagen-izquierda { order: 3; }
+  .texto-derecha   { order: 4; }
+
+  .texto-izquierda,
+  .texto-derecha {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .texto-izquierda p,
+  .texto-derecha p {
+    font-size: 16.5px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  .texto-izquierda h2,
+  .texto-derecha h2 {
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+
+  .subtitulo {
+    font-size: 14px;
+  }
+
+  .texto-derecha h2.gracias {
+    font-size: 30px;
+  }
+}

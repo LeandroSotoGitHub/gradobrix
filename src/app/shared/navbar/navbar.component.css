@@ -1,0 +1,100 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #181613;
+  color: #FDF0F2;
+  padding: 16px 128px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  height: 7vh;
+  font-size: 1rem;
+  box-shadow: 0px 8px 24.3px 0px rgba(0, 0, 0, 0.30);
+  border-bottom: #CDA977 1px solid;
+}
+
+.logo-navbar {
+  max-width: 6rem;
+}
+
+/* Botón Hamburguesa */
+.hamburger-menu {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #FDF0F2;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* 💻 Menú en desktop (alineado en línea) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #FDF0F2;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #CDA977;
+}
+
+/* 📱 Menú desplegable debajo del navbar */
+@media (max-width: 768px) {
+  .navbar{
+    padding: 3vh 5vw;
+  }
+  
+
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    z-index: 1100;
+  }
+
+  /* Menú inicia oculto */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7vh; /* Se despliega justo debajo del navbar */
+    left: 0;
+    width: 100%;
+    background: #181613;
+    text-align: start;
+    padding: 3vh 5vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Cuando el menú está activo, se muestra */
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+    /* border-bottom: 1px solid #CDA977; */
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+}

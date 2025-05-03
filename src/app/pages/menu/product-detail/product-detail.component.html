@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+
+<section class="product-detail" *ngIf="producto">
+  <div class="image-column">
+    <img [src]="producto.imageUrl" [alt]="producto.title" />
+  </div>
+
+  <div class="info-column">
+    <h2>{{ producto.title }}</h2>
+
+    <div class="tags">
+      <i>{{ producto.icon }}</i>
+    </div>
+
+    <p class="description">{{ producto.description }}</p>
+
+    <div class="prices">
+      <p><strong>Precio:</strong> {{ producto.price }}</p>
+    </div>
+
+    <button class="pedido">Hacé tu pedido</button>
+  </div>
+</section>
+
+<section *ngIf="!producto">
+  <p>Producto no encontrado.</p>
+</section>

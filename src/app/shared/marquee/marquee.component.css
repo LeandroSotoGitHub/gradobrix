@@ -1,7 +1,7 @@
 .marquee-container {
     width: 100%;
     overflow: hidden;
-    background: #30291F; /* Fondo marrón oscuro */
+    background: var(--color-dark); /* Fondo marrón oscuro */
     padding: 20px 0;
     position: relative;
     white-space: nowrap;

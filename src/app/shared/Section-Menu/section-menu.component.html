@@ -1,0 +1,22 @@
+<section class="section-menu">
+  <p class="subtitle">Descubrí nuestras especialidades</p>
+  <h2 class="titulo">Nuestro Menú</h2>
+
+  <swiper-container
+      slides-per-view="1"
+      slides-per-group="1"
+      space-between="16"
+      navigation="true"
+      breakpoints='{
+      "640": { "slidesPerView": 2 },
+      "1024": { "slidesPerView": 3 }
+      }'
+  >
+    <swiper-slide *ngFor="let item of categories">
+      <div class="card" [routerLink]="item.Routing">
+        <img [src]="item.imageSrc" [alt]="item.imageSrc" />
+        <h3>{{ item.title }}</h3>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</section>

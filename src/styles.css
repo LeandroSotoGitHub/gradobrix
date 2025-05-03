@@ -36,6 +36,10 @@
     width: fit-content;
   }
 
+  .title{
+    color: var(--color-header);
+  }
+
   @media (max-width: 768px){
     h2{
       font-size: 3.3rem;
@@ -44,3 +48,36 @@
 
 
 
+  :root {
+    /* Colores base de la identidad visual */
+    --color-primary: #C8A58F;     /* Ejemplo: Marrón pastel */
+    --color-secondary: #F6E5D9;   /* Ejemplo: Crema claro */
+    --color-accent: #A67C52;      /* Ejemplo: Marrón medio */
+    --color-dark: #181613;        /* Ejemplo: Marrón oscuro */
+    --color-light: #FFF8F3;       /* Ejemplo: Fondo claro */
+    --color-background: #f5e6d7;
+
+    /* Neutros */
+    --color-text: #2E2E2E;
+    --color-header: #3e2723;
+    --color-muted: #7D7D7D;
+    --color-border: #E0D6CE;
+    --color-white: #ffffff;
+    --color-black: #000000;
+  
+    /* Espaciados */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+  
+    /* Tipografías */
+    --font-title: 'Carphe', serif;
+    --font-heading: 'Baskerville Old Face', serif;
+    --font-body: 'Gotham', sans-serif;
+  
+    /* Otros */
+    --radius: 8px;
+    --transition: all 0.3s ease-in-out;
+  }

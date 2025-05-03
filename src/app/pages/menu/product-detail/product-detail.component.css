@@ -1,0 +1,41 @@
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--color-secondary);
+  }
+  
+  .image-column img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .info-column {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .info-column h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-header);
+  }
+  
+  .description {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .pedido {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  

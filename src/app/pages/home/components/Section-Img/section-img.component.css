@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #F4EDE3;
+  background-color: var(--color-background);
   flex-direction: row; /* Por defecto, la imagen y el texto están en fila */
 }
 

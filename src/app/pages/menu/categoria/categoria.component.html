@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+
+<section class="categoria-section">
+  <p class="bajada">bajada</p>
+  <h2 class="titulo">{{ categoria | titlecase }}</h2>
+
+  <div class="product_grid">
+    <div class="product_card" *ngFor="let item of productos" [routerLink]="['/menu', categoria, item.slug]">
+      <img [src]="item.imageUrl" [alt]="item.title" />
+      <div class="product_info">
+        <h3>{{ item.title }}</h3>
+        <p>Precio: {{ item.price }}</p>
+      </div>
+      <div class="product_icon">
+        <i>{{ item.icon }}</i>
+      </div>
+    </div>
+  </div>
+</section>

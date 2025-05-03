@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class SwiperTeamComponent {
   images: string[] = [
-    'assets/img/aboutUs_1.jpg',
-    'assets/img/aboutUs_2.jpg',
-    'assets/img/aboutUs_3.jpg'
+    'assets/img/aboutUs_5.jpg',
+    'assets/img/aboutUs_12.jpg',
+    'assets/img/aboutUs_8.jpg',
+    'assets/img/aboutUs_6.jpg',
+    'assets/img/aboutUs_7.jpg',
   ];
 
   currentIndex = 0;
@@ -17,7 +19,7 @@ export class SwiperTeamComponent {
   ngOnInit(): void {
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
-    }, 10000);
+    }, 3500);
   }
 
   getTransform(): string {

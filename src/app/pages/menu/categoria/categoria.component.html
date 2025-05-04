@@ -6,7 +6,10 @@
 
   <div class="product_grid">
     <div class="product_card" *ngFor="let item of productos" [routerLink]="['/menu', categoria, item.slug]">
-      <img [src]="item.imageUrl" [alt]="item.title" />
+      <div class="img-wrapper">
+        <img [src]="item.imageUrl" [alt]="item.title" class="main-img" loading="lazy" />
+        <img [src]="item.hoverImageUrl" [alt]="item.title + ' costado'" class="hover-img" loading="lazy" />
+      </div>
       <div class="product_info">
         <h3>{{ item.title }}</h3>
         <p>Precio: {{ item.price }}</p>

@@ -1,7 +1,7 @@
 .sobre-nosotros {
   display: flex;
   justify-content: center;
-  background-color: #F1DFC6;
+  background-color: var(--color-background);
 }
 
 .grid-container {
@@ -11,6 +11,7 @@
   gap: 20px;
   max-width: 1200px;
   width: 100%;
+  padding: 3rem 1.5rem;
 }
 
 /* Banner */
@@ -75,7 +76,7 @@
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: #2f2a25;
+  color: var(--color-text);
   font-family: 'Gotham', sans-serif;
   letter-spacing: 0.2px;
 }
@@ -84,14 +85,14 @@
 .texto-derecha h2 {
   font-size: 34px;
   font-weight: 700;
-  color: #1e1b17;
+  color: var(--color-dark);
   margin-bottom: 18px;
 }
 
 .subtitulo {
   font-size: 16px;
   font-weight: 600;
-  color: #5c5245;
+  color: var(--color-accent);
   margin-bottom: 6px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -104,9 +105,21 @@
 .texto-derecha h2.gracias {
   font-size: 38px;
   font-weight: bold;
-  color: #1e1b17;
+  color: var(--color-dark);
   margin-top: 30px;
 }
+
+.texto-izquierda h2,
+.texto-derecha h2,
+.texto-derecha h2.gracias {
+  font-family: 'Baskerville Old Face', serif;
+}
+
+.texto-izquierda p,
+.texto-derecha p {
+  font-family: 'Gotham', sans-serif;
+}
+
 
 /* ====== RESPONSIVE ====== */
 @media screen and (max-width: 768px) {

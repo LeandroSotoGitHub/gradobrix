@@ -1,0 +1,116 @@
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-light);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 4rem 1rem;
+}
+
+.service__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-family: 'Baskerville Old Face', serif;
+  color: var(--color-header);
+  padding: 0.5rem;
+}
+
+.subtitulo {
+  font-family: 'Gotham', sans-serif;
+  font-size: 1rem;
+  color: var(--color-header);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section__description {
+  font-family: 'Gotham', sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.service__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.service__card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service__card:hover {
+  transform: translateY(-5px);
+}
+
+.service__card i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service__card h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: var(--secondary-color-dark);
+  font-family: 'Gotham', sans-serif;
+}
+
+.service__card p {
+  color: var(--text-light);
+  font-size: 1rem;
+  font-family: 'Gotham', sans-serif;
+  line-height: 1.6;
+}
+
+
+/* 🔁 Responsive */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .section__description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .service__grid {
+    gap: 2rem;
+  }
+
+  .service__card {
+    padding: 1.5rem;
+  }
+
+  .service__card i {
+    font-size: 2.5rem;
+    padding: 0.8rem;
+  }
+
+  .service__card h4 {
+    font-size: 1.1rem;
+  }
+
+  .service__card p {
+    font-size: 0.95rem;
+  }
+}

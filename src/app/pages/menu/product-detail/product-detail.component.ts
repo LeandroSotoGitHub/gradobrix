@@ -10,7 +10,13 @@ import { MENU_DATA, Producto } from 'src/app/Data/menu';
 export class ProductDetailComponent implements OnInit {
   producto: Producto | null = null;
 
+  activeTab = '';
+
   constructor(private route: ActivatedRoute) {}
+
+  getPriceKeys(priceObj: { [key: string]: string }): string[] {
+  return Object.keys(priceObj);
+}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -22,5 +28,8 @@ export class ProductDetailComponent implements OnInit {
         this.producto = lista.find(p => p.slug === slug) || null;
       }
     });
+     if (this.producto?.tabGroups?.length) {
+    this.activeTab = this.producto.tabGroups[0].label.toLowerCase(); // activa el primero
+    }
   }
 }

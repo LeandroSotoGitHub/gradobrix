@@ -6,6 +6,8 @@ import { MarqueeComponent } from './marquee/marquee.component';
 import { CardComponent } from './card/card.component';
 import { RouterModule } from '@angular/router';
 import { SectionMenuComponent } from './Section-Menu/section-menu.component';
+import { FooterComponent } from './footer/footer.component';
+import { WhatsappBTNComponent } from './whatsapp-btn/whatsapp-btn.component';
 
 
 
@@ -15,7 +17,9 @@ import { SectionMenuComponent } from './Section-Menu/section-menu.component';
     NavbarComponent,
     MarqueeComponent,
     SectionMenuComponent,
-    CardComponent
+    CardComponent,
+    FooterComponent,
+    WhatsappBTNComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +30,9 @@ import { SectionMenuComponent } from './Section-Menu/section-menu.component';
     MarqueeComponent,
     CardComponent,
     RouterModule,
-    SectionMenuComponent 
+    SectionMenuComponent,
+    FooterComponent,
+    WhatsappBTNComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

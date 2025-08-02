@@ -1,24 +1,77 @@
 <app-navbar></app-navbar>
 
 <section class="product-detail" *ngIf="producto">
-  <div class="image-column">
-    <img [src]="producto.imageUrl" [alt]="producto.title" />
-  </div>
-
-  <div class="info-column">
-    <h2>{{ producto.title }}</h2>
-
-    <div class="tags">
-      <i>{{ producto.icon }}</i>
+  <div class="detail-grid">
+    <div class="carrusel">
+      <swiper-container
+        slides-per-view="1"
+        pagination="true"
+        autoplay='{"delay": 3000}'
+        loop="true"
+        class="product-swiper"
+      >
+        <swiper-slide *ngFor="let img of producto.gallery || [producto.imageUrl, producto.hoverImageUrl]">
+          <img [src]="img" [alt]="producto.title" />
+        </swiper-slide>
+      </swiper-container>
     </div>
 
-    <p class="description">{{ producto.description }}</p>
+    <div class="info-container">
+      <h2>{{ producto.title }}</h2>
 
-    <div class="prices">
-      <p><strong>Precio:</strong> {{ producto.price }}</p>
+      <div class="badges">
+        <span class="badge" *ngFor="let tag of producto.tags">{{ tag }}</span>
+        <i *ngIf="producto.icon" class="icon">{{ producto.icon }}</i>
+      </div>
+
+      <div class="description" [innerHTML]="producto.description"></div>
+
+      <div class="tabs" *ngIf="producto.tabGroups">
+        <button
+          *ngFor="let tab of producto.tabGroups"
+          [class.active]="activeTab === tab.label.toLowerCase()"
+          (click)="activeTab = tab.label.toLowerCase()"
+        >
+          {{ tab.label }}
+        </button>
+      </div>
+
+      <!-- Lista de sabores según tab -->
+      <div
+        class="grupo"
+        *ngFor="let tab of producto.tabGroups"
+        [hidden]="activeTab !== tab.label.toLowerCase()"
+      >
+        <h3>Triples {{ tab.label }} x6</h3>
+
+        <p class="tab-description" *ngIf="tab.description">{{ tab.description }}</p>
+
+        <ul>
+          <li *ngFor="let sabor of tab.sabores">{{ sabor }}</li>
+        </ul>
+        
+        <div *ngIf="tab.price" class="tab-price-group">
+        <div *ngFor="let key of getPriceKeys(tab.price)">
+          <span class="presentation">{{ key | titlecase }}:</span>
+          <span class="amount">{{ tab.price[key] }}</span>
+        </div>
+      </div>
+
     </div>
 
-    <button class="pedido">Hacé tu pedido</button>
+    <div class="price-container" *ngIf="producto.price6a8 || producto.price4a6">
+          <div class="price" *ngIf="producto.price6a8">
+            <i class="icon">⏱</i>
+            <p>6 a 8 porciones ${{ producto.price6a8 }}</p>
+          </div>
+          <div class="price" *ngIf="producto.price4a6">
+            <i class="icon">⏱</i>
+            <p>4 a 6 porciones ${{ producto.price4a6 }}</p>
+          </div>
+    </div>
+      
+      <button class="btn-pedido">Hacé tu pedido</button>
+    </div>
   </div>
 </section>
 

@@ -8,6 +8,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { SectionImgComponent } from './components/Section-Img/section-img.component';
 import { SectionAboutUsComponent } from './components/section-about-us/section-about-us.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { SectionServicesComponent } from './components/section-services/section-services.component';
+import { SectionQuestionsComponent } from './components/section-questions/section-questions.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     HomeComponent,
     HeroComponent,
     SectionImgComponent,
-    SectionAboutUsComponent
+    SectionAboutUsComponent,
+    SectionServicesComponent,
+    SectionQuestionsComponent
   ],
   imports: [
     CommonModule,

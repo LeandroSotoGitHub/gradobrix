@@ -24,7 +24,7 @@
     font-weight: bold;
   }
 
-  button {
+  /* button {
     background-color: #3C2F2F;
     color: white;
     border: none;
@@ -34,7 +34,27 @@
     font-family: 'Gotham', sans-serif;
     font-size: 1rem;
     width: fit-content;
-  }
+  } */
+
+  .btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-family: 'Gotham', sans-serif;
+  cursor: pointer;
+  border-radius: 8px;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+}
+
+
+
 
   .title{
     color: var(--color-header);
@@ -43,6 +63,10 @@
   @media (max-width: 768px){
     h2{
       font-size: 3.3rem;
+    }
+
+    .btn {
+     margin: 0 auto;
     }
   }
 

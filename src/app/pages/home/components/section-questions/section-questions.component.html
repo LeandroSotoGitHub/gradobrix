@@ -1,0 +1,15 @@
+<section class="faq-section">
+  <h2 class="faq-title">Preguntas frecuentes</h2>
+  <div class="faq-container">
+    <div class="faq-item" *ngFor="let pregunta of preguntas; let i = index">
+      <button class="faq-question" (click)="toggle(i)">
+        {{ pregunta.titulo }}
+        <i class="ri-arrow-down-s-line" *ngIf="activeIndex !== i"></i>
+        <i class="ri-arrow-up-s-line" *ngIf="activeIndex === i"></i>
+      </button>
+      <div class="faq-answer" [class.open]="activeIndex === i">
+        <p [innerHTML]="pregunta.respuesta"></p>
+      </div>
+    </div>
+  </div>
+</section>

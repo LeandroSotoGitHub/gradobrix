@@ -4,7 +4,7 @@ import { WhatsappService } from 'src/app/services/whatsapp.service';
 @Component({
   selector: 'app-whatsapp-btn',
   templateUrl: './whatsapp-btn.component.html',
-  styleUrls: ['./whatsapp-btn.component.css']
+  styleUrls: ['./whatsapp-btn.component.scss']
 })
 export class WhatsappBTNComponent {
   constructor(private whatsappService: WhatsappService) {}

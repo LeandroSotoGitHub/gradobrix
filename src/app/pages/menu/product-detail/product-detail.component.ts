@@ -1,18 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MENU_DATA, Producto } from 'src/app/Data/menu';
+import { ScrollAnimationService } from 'src/app/services/scroll-animation.service';
+import { WhatsappService } from 'src/app/services/whatsapp.service';
 
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css']
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit, AfterViewInit {
   producto: Producto | null = null;
 
   activeTab = '';
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private whatsappService: WhatsappService,
+    private scrollAnimation: ScrollAnimationService
+  ) {}
 
   getPriceKeys(priceObj: { [key: string]: string }): string[] {
   return Object.keys(priceObj);
@@ -31,5 +37,13 @@ export class ProductDetailComponent implements OnInit {
      if (this.producto?.tabGroups?.length) {
     this.activeTab = this.producto.tabGroups[0].label.toLowerCase(); // activa el primero
     }
+  }
+
+  ngAfterViewInit(): void {
+    this.scrollAnimation.observeElements(); 
+  }
+
+  abrirWhatsapp() {
+    this.whatsappService.abrirWhatsapp();
   }
 }

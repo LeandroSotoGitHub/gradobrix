@@ -4,7 +4,7 @@
   <div class="contactGrid">
     
     <!-- Mapa -->
-    <div class="mapContainer">
+    <div class="mapContainer animate-on-scroll from-left">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.177349125998!2d-58.6479101!3d-34.6502238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf54edc30f9f%3A0xe1a9530d442599b2!2sGRADO%20BRIX!5e0!3m2!1ses-419!2sar!4v1753483601749!5m2!1ses-419!2sar"
             width="100%"
@@ -17,15 +17,17 @@
     </div>
 
     <!-- Información de contacto -->
-    <div class="infoContainer">
+    <div class="infoContainer animate-on-scroll from-right">
       <h2>Contacto</h2>
-      <p><strong>Dirección:</strong></p>
-      <p><strong>Teléfono:</strong></p>
-      <p><strong>Email:</strong></p>
-      <p><strong>Horarios:</strong> </p>
+      <p><strong>Dirección: </strong>Gdor. Inocencio Arias 2802, Castelar</p>
+      <p href="https://wa.me/541139219680" target="_blank" rel="noopener"><strong>Teléfono: </strong>+54 11 3921-9680</p>
+      <p><strong>Horarios: </strong>Martes a sábado 10:30 a 13:30 y 16:30 a 20hs. Domingo 10 a 13:30 </p>
 
-      <button class="btn">Escribinos por WhatsApp</button>
+      <button class="btn" (click)="abrirWhatsapp()">Escribinos por WhatsApp</button>
     </div>
 
   </div>
 </section>
+
+
+<app-whatsapp-btn></app-whatsapp-btn>

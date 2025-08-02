@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <section class="product-detail" *ngIf="producto">
-  <div class="detail-grid">
+  <div class="detail-grid animate-on-scroll from-left">
     <div class="carrusel">
       <swiper-container
         slides-per-view="1"
@@ -42,7 +42,7 @@
         *ngFor="let tab of producto.tabGroups"
         [hidden]="activeTab !== tab.label.toLowerCase()"
       >
-        <h3>Triples {{ tab.label }} x6</h3>
+        <h3> {{ tab.label }} </h3>
 
         <p class="tab-description" *ngIf="tab.description">{{ tab.description }}</p>
 
@@ -70,7 +70,7 @@
           </div>
     </div>
       
-      <button class="btn-pedido">Hacé tu pedido</button>
+      <button class="btn" (click)="abrirWhatsapp()">Hacé tu pedido</button>
     </div>
   </div>
 </section>

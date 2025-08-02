@@ -300,7 +300,7 @@ export const MENU_DATA: Record<string, Producto[]> = {
     slug: "general",
     tabGroups: [
       {
-        label: "Clásicos",
+        label: "Triples Clásicos",
         description: "Nuestros sabores más tradicionales y pedidos: simples, ricos y perfectos para todos los gustos.",
         price: {
                 docena: "$9000",
@@ -317,7 +317,7 @@ export const MENU_DATA: Record<string, Producto[]> = {
         ]
       },
       {
-        label: "Especiales",
+        label: "Triples Especiales",
         description: "Una combinación de sabores únicos que elevan el clásico sándwich a otro nivel.",
         price: {
                 docena: "$9000",
@@ -340,7 +340,7 @@ export const MENU_DATA: Record<string, Producto[]> = {
         ]
       },
       {
-        label: "Gourmet",
+        label: "Triples Gourmet",
         description: "Elaborados con ingredientes seleccionados y combinaciones premium. Para los que buscan algo diferente.",
         price: {
                 docena: "$9000",
@@ -369,13 +369,254 @@ export const MENU_DATA: Record<string, Producto[]> = {
     icon: ""
   }
 ],
-// "alfajores": [
-//   {
-//     title: "alfajores",
-//     slug:"general",
+alfajores: [
+  {
+    title: "Lunnettes",
+    slug: "lunnettes",
+    description: "Dulce de leche montado en forma de copete, cubierto con un intenso baño de chocolate semiamargo. Elegante y moderno.",
+    price: "xxxx",
+    price6a8: "xxx",
+    price4a6: "xxx",
+    tags: ["Dulce de leche", "Chocolate", "Moderno"],
+    imageUrl: "assets/img/Alfajores/Lunnettes-Arriba.webp",
+    hoverImageUrl: "assets/img/Alfajores/Lunnettes-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Maicena",
+    slug: "maicena",
+    description: "Dos tapas de maicena rellenas con abundante dulce de leche, rebozadas en coco rallado. Clásico de siempre.",
+    price: "xxxx",
+    price6a8: "$xxxx x6",
+    price4a6: "xxx",
+    tags: ["Maicena", "Coco", "Dulce de leche"],
+    imageUrl: "assets/img/Alfajores/Maicena-Arriba.webp",
+    hoverImageUrl: "assets/img/Alfajores/Maicena-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Clásicos",
+    slug: "clasicos",
+    description: "Alfajores rellenos de dulce de leche y bañados en chocolate semiamargo. La versión artesanal del infaltable argentino.",
+    price: "xxxx",
+    price6a8: "$xxxx x6",
+    price4a6: "xxx",
+    tags: ["Chocolate", "Dulce de leche", "Tradicional"],
+    imageUrl: "assets/img/Alfajores/Clasicos-Arriba.webp",
+    hoverImageUrl: "assets/img/Alfajores/Clasicos-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Nuez",
+    slug: "nuez",
+    description: "Tapas con nuez molida, relleno de dulce de leche y una cobertura ligera de glasé. Suave y elegante.",
+    price: "xxxx",
+    price6a8: "xxx",
+    price4a6: "xxx",
+    tags: ["Nuez", "Glasé", "Suave"],
+    imageUrl: "assets/img/Alfajores/Nuez-Arriba.webp",
+    hoverImageUrl: "assets/img/Alfajores/Nuez-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Membrillo",
+    slug: "membrillo",
+    description: "Dos suaves tapas rellenas de dulce de membrillo artesanal. Para los que aman lo tradicional.",
+    price: "xxxx",
+    price6a8: "xxx",
+    price4a6: "xxx",
+    tags: ["Membrillo", "Tradicional", "Artesanal"],
+    imageUrl: "assets/img/Alfajores/Membrillo-Arriba.webp",
+    hoverImageUrl: "assets/img/Alfajores/Membrillo-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Marplatense Baño Chocolate",
+    slug: "marplatense-chocolate",
+    description: "Alfajor estilo marplatense con doble capa de galletita rellena de dulce de leche y baño de chocolate.",
+    price: "xxxx",
+    price6a8: "xxx",
+    price4a6: "xxx",
+    tags: ["Marplatense", "Chocolate", "Galletita"],
+    imageUrl: "assets/img/Alfajores/Marplatense-Chocolate-Arriba.webp",
+    hoverImageUrl: "assets/img/Alfajores/Marplatense-Chocolate-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Marplatense Baño de Merengue",
+    slug: "marplatense-merengue",
+    description: "Versión marplatense con baño blanco de merengue. Textura suave, sabor delicado.",
+    price: "xxxx",
+    price6a8: "xxx",
+    price4a6: "xxx",
+    tags: ["Merengue", "Marplatense", "Dulce de leche"],
+    imageUrl: "assets/img/Alfajores/Marplatense-Merengue-Arriba.webp",
+    hoverImageUrl: "assets/img/Alfajores/Marplatense-Merengue-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Frutos Rojos",
+    slug: "frutos-rojos",
+    description: "Relleno de frutos rojos naturales entre tapas suaves. Una opción frutada y diferente.",
+    price: "xxxx",
+    price6a8: "xxx",
+    price4a6: "xxx",
+    tags: ["Frutos rojos", "Original", "Frutado"],
+    imageUrl: "assets/img/Alfajores/FrutosRojos-Arriba.webp",
+    hoverImageUrl: "assets/img/Alfajores/FrutosRojos-Costado.webp",
+    icon: ""
+  }
+],
+cookies : [
+  {
+    title: "Cookies",
+    slug: "general",
+    imageUrl:"",
+    hoverImageUrl:"",
+    price:"",
+    icon:"",
+    gallery:[
+      "assets/img/Sandwich/sandwich1.webp",
+      "assets/img/Sandwich/sandwich1.webp",
+      "assets/img/Sandwich/sandwich1.webp"
+    ],
+    tabGroups: [
+      {
+        label: "Nuestros alfajores",
+        description: "Conocé algunos de nuestros mejores gustos:",
+        price: {
+                docena: "$XXX",
+                mediaDocena: "$XXX",
+                unidad: "$XXX"
+        },
+        sabores: [
+          "Red velvet",
+          "Avena, chips de chocolate blanco, coco y nueces",
+          "Chips de chocolate",
+          "Manteca de maní y confites de chocolate",
+        ]
+      },
+    ]
+  }
+],
+boulangerie: [
+  {
+    title: "Boulangerie",
+    slug: "general",
+    price: "",
+    imageUrl: "assets/img/Boulangerie/Boulangerie-General.webp",
+    hoverImageUrl: "assets/img/Boulangerie/Boulangerie-General-Hover.webp",
+    icon: "",
+    gallery: [
+      "assets/img/Boulangerie/Boulangerie-General.webp",
+      "assets/img/Boulangerie/MediaLuna.webp",
+      "assets/img/Boulangerie/Pan-Multicereal.webp"
+    ],
+    tabGroups: [
+      {
+        label: "Clásicos de Panadería",
+        description: "Delicias frescas, artesanales y con todo el sabor tradicional de la panadería.",
+        sabores: [
+          "Medialunas",
+          "Medialunas rellenas de jamón y queso",
+          "Pan multicereal",
+          "Chips",
+          "Fosforitos de jamón y queso"
+        ],
+        price: {
+          unidad: "$xxx",
+          docena: "$xxx"
+        }
+      },
+      {
+        label: "Masas & Galletitas",
+        description: "Opciones dulces ideales para acompañar el mate, el té o regalar.",
+        sabores: [
+          "Masas secas",
+          "Masas finas",
+          "Pepas de membrillo o batata",
+          "Cookies red velvet",
+          "Cookies chips de chocolate",
+          "Cookies avena, coco, chips blancos y nuez",
+          "Cookies manteca de maní y confites de colores"
+        ],
+        price: {
+          bandeja: "$xxx"
+        }
+      },
+      {
+        label: "Budines",
+        description: "Esponjosos, húmedos y con combinaciones únicas para todos los gustos.",
+        sabores: [
+          "Naranja",
+          "Limón",
+          "Choco-naranja",
+          "Chips de chocolate y frutos secos",
+          "Chocolate",
+          "Vainilla y chocolate"
+        ],
+        price: {
+          unidad: "$xxx"
+        }
+      },
+      {
+        label: "Otros dulces",
+        description: "Delicias artesanales para sorprender en cada mesa.",
+        sabores: [
+          "Scones dulces",
+          "Scones de queso",
+          "Merengues rellenos de dulce de leche"
+        ],
+        price: {
+          unidad: "$xxx",
+          mediaDocena: "$xxx"
+        }
+      }
+    ]
+  }
+],
+cuadrados: [
+  {
+    title: "Cuadrados",
+    slug: "general",
+    imageUrl: "assets/img/Cuadrados/Cuadrados-General.webp",
+    hoverImageUrl: "assets/img/Cuadrados/Cuadrados-General-Hover.webp",
+    price: "",
+    icon: "",
+    gallery: [
+      "assets/img/Cuadrados/Cuadrados-General.webp",
+      "assets/img/Cuadrados/Cuadrado-Manzana.webp",
+      "assets/img/Cuadrados/Cuadrado-Brownie.webp"
+    ],
+    tabGroups: [
+      {
+        label: "Sabores de cuadrados",
+        description: "Nuestros cuadrados son ideales para una porción individual con todo el sabor artesanal de °Brix.",
+        price: {
+          unidad: "$xxx",
+          bandeja: "$xxx"
+        },
+        sabores: [
+          "Manzana",
+          "Coco y dulce de leche",
+          "Pasta frola de membrillo",
+          "Pasta frola de batata",
+          "Naranja",
+          "Limón",
+          "Ricota",
+          "Stroisel de frutos rojos",
+          "Brownies con nuez",
+          "Brownies con chips de chocolate",
+          "Carrot cake",
+          "Matera"
+        ]
+      }
+    ]
+  }
+]
 
-//   }
-    
 
-// ]
+
+
+
 };

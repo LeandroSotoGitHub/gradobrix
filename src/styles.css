@@ -71,7 +71,6 @@
   }
 
 
-
   :root {
     /* Colores base de la identidad visual */
     --color-primary: #C8A58F;     /* Ejemplo: Marrón pastel */
@@ -105,3 +104,38 @@
     --radius: 8px;
     --transition: all 0.3s ease-in-out;
   }
+
+
+/* Estado inicial (oculto) */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  /* transition: all 0.8s ease-out; */
+}
+
+/* Activa cuando entra al viewport */
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-out;
+}
+
+/* Dirección personalizada */
+.from-left {
+  transform: translateX(-60px);
+}
+.from-right {
+  transform: translateX(60px);
+}
+.from-left.visible,
+.from-right.visible {
+  transform: translateX(0);
+}
+
+.from-bottom {
+  transform: translateY(60px);
+}
+
+.from-bottom.visible {
+  transform: translateY(0);
+}

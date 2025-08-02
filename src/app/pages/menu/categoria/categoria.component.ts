@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MENU_DATA, Producto } from 'src/app/Data/menu';
+import { ScrollAnimationService } from 'src/app/services/scroll-animation.service';
 
 @Component({
   selector: 'app-categoria',
@@ -11,8 +12,11 @@ export class CategoriaComponent implements OnInit {
   categoria: string = '';
   productos: Producto[] = [];
 
-  constructor(private route: ActivatedRoute) {}
-
+   constructor(
+      private route: ActivatedRoute,
+      private scrollAnimation: ScrollAnimationService
+    ) {}
+  
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       const cat = params.get('categoria');
@@ -24,5 +28,9 @@ export class CategoriaComponent implements OnInit {
         this.productos = [];
       }
     });
+  }
+
+  ngAfterViewInit(): void {
+    this.scrollAnimation.observeElements(); 
   }
 }

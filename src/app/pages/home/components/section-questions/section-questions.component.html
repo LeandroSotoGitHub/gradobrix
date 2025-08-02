@@ -1,6 +1,6 @@
 <section class="faq-section">
   <h2 class="faq-title">Preguntas frecuentes</h2>
-  <div class="faq-container">
+  <div class="faq-container animate-on-scroll">
     <div class="faq-item" *ngFor="let pregunta of preguntas; let i = index">
       <button class="faq-question" (click)="toggle(i)">
         {{ pregunta.titulo }}

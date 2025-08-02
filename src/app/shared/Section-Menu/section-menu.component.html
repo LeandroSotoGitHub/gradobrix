@@ -12,11 +12,15 @@
       "1024": { "slidesPerView": 3 }
       }'
   >
-    <swiper-slide *ngFor="let item of categories">
-      <div class="card" [routerLink]="item.Routing">
+    <swiper-slide *ngFor="let item of categories; let i = index" class="animate-on-scroll from-bottom">
+      <div 
+      class="card" 
+      [attr.data-index]="i"
+      [routerLink]="item.Routing">
         <img [src]="item.imageSrc" [alt]="item.imageSrc" />
         <h3>{{ item.title }}</h3>
       </div>
     </swiper-slide>
   </swiper-container>
 </section>
+<app-whatsapp-btn></app-whatsapp-btn>

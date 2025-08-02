@@ -22,11 +22,13 @@ activeIndex: number | null = null;
     {
       titulo: '¿Pueden hacerme un presupuesto personalizado?',
       respuesta: `
-        ¡Sí! Escribinos por WhatsApp e incluí:<br>
-        - ¿Cuántas personas van a asistir?<br>
-        - ¿Es un evento de día, tarde o noche?<br>
-        - ¿Qué están buscando?<br>
-        - ¿Cuánto dura el evento?`
+      <ul>
+        ¡Sí! Escribinos por WhatsApp e incluí:</li>
+        <li>¿Cuántas personas van a asistir?</li>
+        <li>¿Es un evento de día, tarde o noche?</li>
+        <li>¿Qué están buscando?</li>
+        <li>¿Cuánto dura el evento?</li>
+      </ul>`
     },
     {
       titulo: '¿Están abiertos los feriados?',

@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MENU_DATA, Producto } from 'src/app/Data/menu';
 import { ScrollAnimationService } from 'src/app/services/scroll-animation.service';
 import { WhatsappService } from 'src/app/services/whatsapp.service';
@@ -11,18 +11,18 @@ import { WhatsappService } from 'src/app/services/whatsapp.service';
 })
 export class ProductDetailComponent implements OnInit, AfterViewInit {
   producto: Producto | null = null;
-
   activeTab = '';
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private whatsappService: WhatsappService,
     private scrollAnimation: ScrollAnimationService
   ) {}
 
   getPriceKeys(priceObj: { [key: string]: string }): string[] {
-  return Object.keys(priceObj);
-}
+    return Object.keys(priceObj);
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -32,11 +32,16 @@ export class ProductDetailComponent implements OnInit, AfterViewInit {
       if (categoria && slug && MENU_DATA[categoria]) {
         const lista = MENU_DATA[categoria];
         this.producto = lista.find(p => p.slug === slug) || null;
+
+        if (!this.producto) {
+          this.router.navigate(['/menu']); // Redirige si no existe
+        } else if (this.producto.tabGroups?.length) {
+          this.activeTab = this.producto.tabGroups[0].label.toLowerCase();
+        }
+      } else {
+        this.router.navigate(['/menu']); // Redirige si la categoría no existe
       }
     });
-     if (this.producto?.tabGroups?.length) {
-    this.activeTab = this.producto.tabGroups[0].label.toLowerCase(); // activa el primero
-    }
   }
 
   ngAfterViewInit(): void {

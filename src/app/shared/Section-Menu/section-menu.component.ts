@@ -19,14 +19,14 @@ export class SectionMenuComponent implements AfterViewInit {
     },
     {
       title: 'Sanguches de miga',
-      imageSrc: 'assets/img/Sandwich/Portada-SandwichDeMiga.webp',
+      imageSrc: 'assets/img/Sandwich/sandwichmega.jpg',
       isSingle: true,
       slug: 'general',
       Routing: '/menu/sanguches-de-miga/general'
     },
     {
       title: 'Cuadrados',
-      imageSrc: 'assets/img/Cuadrados/',
+      imageSrc: 'assets/img/Cuadraditos/Cuadraditos-portada.webp',
       isSingle: true,
       slug: 'general',
       Routing: '/menu/cuadrados/general'

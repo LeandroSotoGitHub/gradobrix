@@ -1,11 +1,12 @@
 <app-navbar></app-navbar>
+<app-back-btn/>
 
 <section class="product-detail" *ngIf="producto">
   <div class="detail-grid animate-on-scroll from-left">
     <div class="carrusel">
       <swiper-container
         slides-per-view="1"
-        pagination="true"
+        pagination="false"
         autoplay='{"delay": 3000}'
         loop="true"
         class="product-swiper"
@@ -59,22 +60,18 @@
 
     </div>
 
-    <div class="price-container" *ngIf="producto.price6a8 || producto.price4a6">
-          <div class="price" *ngIf="producto.price6a8">
-            <i class="icon">⏱</i>
-            <p>6 a 8 porciones ${{ producto.price6a8 }}</p>
+    <div class="price-container" *ngIf="producto.priceGrande || producto.priceChico">
+          <div class="price" *ngIf="producto.priceGrande">
+            <i class="icon ri-pie-chart-line"></i>
+            <p>Precio Grande:${{ producto.priceGrande }}</p>
           </div>
-          <div class="price" *ngIf="producto.price4a6">
-            <i class="icon">⏱</i>
-            <p>4 a 6 porciones ${{ producto.price4a6 }}</p>
+          <div class="price" *ngIf="producto.priceChico">
+            <i class="icon ri-pie-chart-line"></i>
+            <p>Precio Chico:${{ producto.priceChico }}</p>
           </div>
     </div>
       
       <button class="btn" (click)="abrirWhatsapp()">Hacé tu pedido</button>
     </div>
   </div>
-</section>
-
-<section *ngIf="!producto">
-  <p>Producto no encontrado.</p>
 </section>

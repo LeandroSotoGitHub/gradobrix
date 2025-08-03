@@ -1,0 +1,22 @@
+.Container-back{
+  background-color: var(--color-background);
+    display: flex;
+  justify-content: center;
+}
+
+.back-button {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-dark);
+  transition: color 0.2s;
+}
+
+.back-button:hover {
+  color: var(--color-primary);
+}

@@ -7,293 +7,281 @@ export interface Producto {
   hoverImageUrl: string;
   icon: string;
   tags?: string[];
-  price6a8?: string;
-  price4a6?: string;
+  priceGrande?: string;
+  priceChico?: string;
   gallery?: string[];
   tabGroups?: any
 }
 
 export const MENU_DATA: Record<string, Producto[]> = {
-  tortas: [
-    {
-      title: "Ascensión",
-      slug: "ascension",
-      description: "Base húmeda de chocolate sin harina rellena de crema de dulce de leche.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Sin harina", "Dulce de leche", "Chocolate"],
-      imageUrl: "assets/img/Tortas/Torta Asensión/Torta-Asesion-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta Asensión/Torta-Asesion-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "New York Cheesecake",
-      slug: "new-york-cheesecake",
-      description: "Base de galletitas, crema de queso cocido, compota de frutos rojos y frutos rojos frescos.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Cheesecake", "Frutos rojos", "Galletitas"],
-      imageUrl: "assets/img/Tortas/Torta New York CheeseCake/Torta-Cheesecake-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta New York CheeseCake/Torta-Cheesecake-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Chini-Brownie",
-      slug: "chini-brownie",
-      description: "Base de brownie, dulce de leche, crema y merengue.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Brownie", "Dulce de leche", "Merengue"],
-      imageUrl: "assets/img/Tortas/Torta Brownie/Torta-Brownie-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta Brownie/Torta-Brownie-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Tiramisú",
-      slug: "tiramisu",
-      description: "Base de vainillas humedecidas con almíbar de café y una crema de queso mascarpone.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Café", "Vainillas", "Mascarpone"],
-      imageUrl: "assets/img/Tortas/Torta Tiramisú/Torta-Tiramisu-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta Tiramisú/Torta-Tiramisu-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Oreo Cheesecake",
-      slug: "oreo-cheesecake",
-      description: "Base de galletitas oreo, dulce de leche y una crema con crocante de galletitas oreo.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Oreo", "Dulce de leche", "Cheesecake"],
-      imageUrl: "assets/img/Tortas/Torta oreo Cheese Cake/Torta-OreoCheesecake-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta oreo Cheese Cake/Torta-OreoCheesecake-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Dulce Otoño",
-      slug: "dulce-otono",
-      description: "Base de brownie, corazón de dulce de leche, mousse de chocolate, brillo de chocolate.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Brownie", "Mousse de chocolate", "Dulce de leche"],
-      imageUrl: "assets/img/Tortas/Torta dulce otoño/Torta-DulceOtoño-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta dulce otoño/Torta-DulceOtoño-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Tres Chocolates",
-      slug: "tres-chocolates",
-      description: "Base de vainilla, corazón de dulce de leche, mousse de chocolate con leche, mousse de chocolate semiamargo y mousse de chocolate blanco.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Chocolate blanco", "Chocolate con leche", "Chocolate amargo"],
-      imageUrl: "assets/img/Tortas/Tres chocolates/Torta-TresChocolates-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Tres chocolates/Torta-TresChocolates-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Mousse de Maracuyá",
-      slug: "mousse-maracuya",
-      description: "Base de vainilla, mousse de maracuyá, corazón de chocolate blanco.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Maracuyá", "Mousse", "Chocolate blanco"],
-      imageUrl: "assets/img/Tortas/Torta Mousse Maracuya/Torta-MousseMaracuya-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta Mousse Maracuya/Torta-MousseMaracuya-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Mousse de Frutilla",
-      slug: "mousse-frutilla",
-      description: "Base de bizcochuelo de vainilla, almíbar de frutilla y mousse de frutilla.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Frutilla", "Mousse", "Bizcochuelo"],
-      imageUrl: "assets/img/tortas/frutilla.webp",
-      hoverImageUrl: "",
-      icon: ""
-    },
-    {
-      title: "Choco Naranja",
-      slug: "choco-naranja",
-      description: "Bizcochuelo húmedo de chocolate amargo con ganache intensa y un toque de naranja fresca. Una combinación clásica y elegante, con el equilibrio justo entre lo cítrico y lo dulce.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Chocolate", "Naranja", "Intensa"],
-      imageUrl: "assets/img/Tortas/Torta Choco Naranja/Torta-ChocoNaranja-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta Choco Naranja/Torta-ChocoNaranja-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Matilda",
-      slug: "matilda-argento",
-      description: "Bizcochuelo de chocolate bien húmedo relleno de dulce de leche y chocolate, baño de chocolate.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Chocolate", "Dulce de leche", "Húmedo"],
-      imageUrl: "assets/img/Tortas/Matilda/Torta-Matilda-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Matilda/Torta-Matilda-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Honor a Doña Petrona",
-      slug: "honor-dona-petrona",
-      description: "Bizcochuelo de vainilla humedecido con almíbar y un toque de coñac, crema chantilly con frutillas, dulce de leche y merenguitos.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Frutilla", "Crema chantilly", "Bizcochuelo"],
-      imageUrl: "assets/img/Tortas/Torta Doña Petrona/Torta-DoñaPetrona-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta Doña Petrona/Torta-DoñaPetrona-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Mil Hojas",
-      slug: "mil-hojas",
-      description: "Capas de masa hojaldrada con relleno de dulce de leche.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Hojaldre", "Dulce de leche", "Clásico"],
-      imageUrl: "assets/img/Tortas/Torta Rogel/Copia de Copia de Rogel.heif",
-      hoverImageUrl: "",
-      icon: ""
-    },
-    {
-      title: "Sambayon",
-      slug: "sambayon",
-      description: "Base de bizcochuelo de chocolate, corazón de crema Bariloche con nueces tostadas y mousse de sambayon",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Sambayón", "Cremosa", "Clásico"],
-      imageUrl: "assets/img/Tortas/Torta Sambayon/Torta-Sambayon-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta Sambayon/Torta-Sambayon-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Balcarce",
-      slug: "balcarce",
-      description: "Capas de bizcochuelo aireado se combinan con dulce de leche, crema chantilly, merengue crocante, coco rallado y trocitos de nuez. Una torta suave, dulce y equilibrada, perfecta para los que buscan tradición en cada bocado.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Sambayón", "Cremosa", "Clásico"],
-      imageUrl: "assets/img/Tortas/Torta Balcarce/Torta-Balcarce-Arriba.webp",
-      hoverImageUrl: "assets/img/Tortas/Torta Balcarce/Torta-Balcarce-Costado.webp",
-      icon: ""
-    }
-  ],
-  tartas: [
-    {
-      title: "Stroisel de Manzana",
-      slug: "stroisel-manzana",
-      description: "Base de tarta de vainilla, rellena con compota de manzana y streusel.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Manzana", "Streusel", "Vainilla"],
-      imageUrl: "assets/img/Tartas/Tarta de manzana/Tarta-Manza-Arriba.webp",
-      hoverImageUrl: "assets/img/Tartas/Tarta de manzana/Tarta-Manza-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Tarta de Pistacho",
-      slug: "tarta-pistacho",
-      description: "Base de tarta de vainilla, crema de pistacho, frutillas frescas y arándanos.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Pistacho", "Frutilla", "Arándanos"],
-      imageUrl: "assets/img/Tartas/Tarta frangipane pistacho/Tarta-Pistacho-Arriba.webp",
-      hoverImageUrl: "assets/img/Tartas/Tarta frangipane pistacho/Tarta-Pistacho-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Tarta Tofi",
-      slug: "tarta-tofi",
-      description: "Una bomba dulce para fanáticos del caramelo. Base crocante, dulce de leche suave, ganache de chocolate con leche y un toque de sal que realza cada capa. Inspirada en el clásico bombón, esta tarta es puro placer en cada bocado.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Dulce de leche", "Chocolate con leche", "Tentadora"],
-      imageUrl: "assets/img/Tartas/Tarta Tofi/Tarta-Tofi-Arriba.webp",
-      hoverImageUrl: "assets/img/Tartas/Tarta Tofi/Tarta-Tofi-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Alice Orange Pie",
-      slug: "alice-orange-pie",
-      description: "Base de tarta de vainilla, crema de naranja fresca y naranjas confitadas.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Naranja", "Confitadas", "Vainilla"],
-      imageUrl: "assets/img/Tartas/Tarta Naranja/Tarta-Naranja-Arriba.webp",
-      hoverImageUrl: "assets/img/Tartas/Tarta Naranja/Tarta-Naranja-Costado.webp",
-      icon: ""
-    },
-    // {
-    //   title: "Tarta de Pera y Avellanas",
-    //   slug: "tarta-pera-avellanas",
-    //   description: "Base de tarta de chocolate, compota de peras y chocolate, streusel de avellanas.",
-    //   price: "xxxx",
-    //   price6a8: "xxx",
-    //   price4a6: "xxx",
-    //   tags: ["pera", "avellanas", "chocolate"],
-    //   imageUrl: "assets/img/tartas/pera-avellanas.webp",
-    //   hoverImageUrl: "",
-    //   icon: ""
-    // },
-    {
-      title: "Lemon Pie",
-      slug: "lemon-pie",
-      description: "Base de tarta de vainilla, rellena de crema de limón y merengue.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Limón", "Merengue", "Vainilla"],
-      imageUrl: "assets/img/Tartas/Lemon Pie/Tarta-LemonPie-Arriba.webp",
-      hoverImageUrl: "assets/img/Tartas/Lemon Pie/Tarta-LemonPie-Costado.webp",
-      icon: ""
-    },
-    {
-      title: "Tarta Frutilla",
-      slug: "tarta-frutilla",
-      description: "Base de tarta de vainilla, crema chantilly, frutillas frescas y gelatina de frutilla. Opción: a pedido con crema pastelera.",
-      price: "xxxx",
-      price6a8: "xxx",
-      price4a6: "xxx",
-      tags: ["Frutilla", "Chantilly", "Vainilla"],
-      imageUrl: "assets/img/tartas/frutilla.webp",
-      hoverImageUrl: "",
-      icon: ""
-    }
-    // {
-    //   title: "Tarta Choco/Naranja",
-    //   slug: "tarta-choco-naranja",
-    //   description: "Base de tarta de chocolate, mousse de chocolate, biscuit de vainilla y mousse de naranja.",
-    //   price: "xxxx",
-    //   price6a8: "xxx",
-    //   price4a6: "xxx",
-    //   tags: ["chocolate", "naranja", "biscuit"],
-    //   imageUrl: "assets/img/Tartas/Tarta Naranja/Tarta-Naranja-Arriba.webp",
-    //   hoverImageUrl: "assets/img/Tartas/Tarta Naranja/Tarta-Naranja-Costado.webp",
-    //   icon: ""
-    // }
-  ],
+tortas: [
+  {
+    title: "Ascensión",
+    slug: "ascension",
+    description: "Base húmeda de chocolate sin harina, rellena de crema de dulce de leche. Un clásico de nuestra pastelería.Nació en casa: la creó mi mamá pensando en mi hermano y en mí, que somos celíacos. En una época en la que no había muchas opciones, esta torta fue nuestro refugio. Con el tiempo se volvió la favorita de todos. No es empalagosa y, si la probás helada, descubrís otra forma de enamorarte de ella.",
+    price: "$30.000",
+    priceGrande: "$38.000 (8 a 12 porciones)",
+    priceChico: "$30.000 (6 a 8 porciones)",
+    tags: ["Sin harina", "Dulce de leche", "Chocolate"],
+    imageUrl: "assets/img/Tortas/Torta Asensión/Torta-Asesion-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Asensión/Torta-Asesion-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "New York Cheesecake",
+    slug: "new-york-cheesecake",
+    description: "Base de galletitas de vainilla, crema de queso horneada y compota casera de frutos del bosque. Nuestra versión clásica: cremosa, equilibrada y con el contraste justo entre dulzura y acidez.",
+    price: "$38.000",
+    priceGrande: "$49.000 (8 a 12 porciones)",
+    priceChico: "$38.000 (6 a 8 porciones)",
+    tags: ["Cheesecake", "Frutos rojos", "Galletitas"],
+    imageUrl: "assets/img/Tortas/Torta New York CheeseCake/Torta-Cheesecake-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta New York CheeseCake/Torta-Cheesecake-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Chini-Brownie",
+    slug: "chini-brownie",
+    description: "Base de brownie húmedo, dulce de leche, crema suave y merengue suizo. Una torta que marcó tendencia y llegó para quedarse. Las texturas y sabores se combinan para ofrecer un postre inolvidable.",
+    price: "$30.000",
+    priceGrande: "$35.000 (8 a 12 porciones)",
+    priceChico: "$30.000 (6 a 8 porciones)",
+    tags: ["Brownie", "Dulce de leche", "Merengue"],
+    imageUrl: "assets/img/Tortas/Torta Brownie/Torta-Brownie-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Brownie/Torta-Brownie-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Tiramisú",
+    slug: "tiramisu",
+    description: "Base de vainillas humedecidas con almíbar de café y una crema de queso mascarpone.",
+    price: "$27.000",
+    priceGrande: "$38.000 (8 a 12 porciones)",
+    priceChico: "$27.000 (6 a 8 porciones)",
+    tags: ["Café", "Vainillas", "Mascarpone"],
+    imageUrl: "assets/img/Tortas/Torta Tiramisú/Torta-Tiramisu-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Tiramisú/Torta-Tiramisu-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Oreo Cheesecake",
+    slug: "oreo-cheesecake",
+    description: "Base de galletitas Oreo, dulce de leche y mousse de crema americana. Una versión moderna del clásico. Chicos y grandes la eligen. La mousse suaviza lo dulce y realza todo su sabor",
+    price: "$45.000",
+    priceGrande: "$48.000 (8 a 12 porciones)",
+    priceChico: "$45.000 (6 a 8 porciones)",
+    tags: ["Oreo", "Dulce de leche", "Cheesecake"],
+    imageUrl: "assets/img/Tortas/Torta oreo Cheese Cake/Torta-OreoCheesecake-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta oreo Cheese Cake/Torta-OreoCheesecake-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Dulce Otoño",
+    slug: "dulce-otono",
+    description: "Base de brownie, corazón de dulce de leche y mousse de chocolate semiamargo. Una torta que hago desde mis comienzos. A pesar de su nombre, es rica todo el año. Las texturas se funden en cada bocado y siempre vuelve a enamorar.",
+    price: "$38.000",
+    priceGrande: "$42.000 (8 a 12 porciones)",
+    priceChico: "$38.000 (6 a 8 porciones)",
+    tags: ["Brownie", "Mousse de chocolate", "Dulce de leche"],
+    imageUrl: "assets/img/Tortas/Torta dulce otoño/Torta-DulceOtoño-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta dulce otoño/Torta-DulceOtoño-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Tres Chocolates",
+    slug: "tres-chocolates",
+    description: "Bizcochuelo de vainilla, corazón de dulce de leche y mousse de chocolate blanco, con leche y semiamargo. Una combinación irresistible para quienes aman el chocolate. Equilibrio perfecto entre intensidad y suavidad.",
+    price: "$30.000",
+    priceGrande: "$38.000 (8 a 12 porciones)",
+    priceChico: "$30.000 (6 a 8 porciones)",
+    tags: ["Chocolate blanco", "Chocolate con leche", "Chocolate amargo"],
+    imageUrl: "assets/img/Tortas/Tres chocolates/Torta-TresChocolates-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Tres chocolates/Torta-TresChocolates-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Mousse de Maracuyá",
+    slug: "mousse-maracuya",
+    description: "Bizcochuelo de vainilla, interior de chocolate blanco y mousse aireada de maracuyá. Fresca, vibrante y elegante. Un glaseado brillante corona esta torta inolvidable.",
+    price: "$25.000",
+    priceGrande: "$32.000 (8 a 12 porciones)",
+    priceChico: "$25.000 (6 a 8 porciones)",
+    tags: ["Maracuyá", "Mousse", "Chocolate blanco"],
+    imageUrl: "assets/img/Tortas/Torta Mousse Maracuya/Torta-MousseMaracuya-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Mousse Maracuya/Torta-MousseMaracuya-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Mousse de Frutilla",
+    slug: "mousse-frutilla",
+    description: "Base de bizcochuelo de vainilla, almíbar de frutilla y mousse de frutilla.",
+    price: "$40.000",
+    priceGrande: "$45.000 (8 a 12 porciones)",
+    priceChico: "$40.000 (6 a 8 porciones)",
+    tags: ["Frutilla", "Mousse", "Bizcochuelo"],
+    imageUrl: "assets/img/tortas/frutilla.webp",
+    hoverImageUrl: "",
+    icon: ""
+  },
+  {
+    title: "Choco Naranja",
+    slug: "choco-naranja",
+    description: "Biscuit de chocolate, mousse de naranja y mousse de chocolate semiamargo. Una combinación sofisticada y fresca. Decorada con naranjas confitadas, que realzan su sabor y elegancia.",
+    price: "$25.000",
+    priceGrande: "$30.000 (8 a 12 porciones)",
+    priceChico: "$25.000 (6 a 8 porciones)",
+    tags: ["Chocolate", "Naranja", "Intensa"],
+    imageUrl: "assets/img/Tortas/Torta Choco Naranja/Torta-ChocoNaranja-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Choco Naranja/Torta-ChocoNaranja-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Matilda",
+    slug: "matilda-argento",
+    description: "Bizcochuelo húmedo de chocolate, doble capa de dulce de leche y ganache de chocolate semiamargo. Intensa y golosa. Te transporta a la infancia, como si estuvieras dentro de una escena de película. Perfecta para festejos.",
+    price: "$35.000",
+    priceGrande: "$42.000 (12 a 18 porciones)",
+    priceChico: "$35.000 (8 a 10 porciones)",
+    tags: ["Chocolate", "Dulce de leche", "Húmedo"],
+    imageUrl: "assets/img/Tortas/Matilda/Torta-Matilda-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Matilda/Torta-Matilda-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Honor a Doña Petrona",
+    slug: "honor-dona-petrona",
+    description: "Bizcochuelo de vainilla húmedo, relleno de dulce de leche con merengues crocantes, crema y frutillas a la reina. A pedido, se puede reemplazar por duraznos en almíbar. Esta torta nació como un tributo a la maestra de la cocina argentina. Evoca tradición, pastelería casera y recetas que marcaron generaciones.",
+    price: "$35.000",
+    priceGrande: "$42.000 (12 a 18 porciones)",
+    priceChico: "$35.000 (8 a 10 porciones)",
+    tags: ["Frutilla", "Crema chantilly", "Bizcochuelo"],
+    imageUrl: "assets/img/Tortas/Torta Doña Petrona/Torta-DoñaPetrona-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Doña Petrona/Torta-DoñaPetrona-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Mil Hojas",
+    slug: "mil-hojas",
+    description: "Capas de masa fina y hojaldrada, intercaladas con dulce de leche y cubiertas con merengue. Un clásico argentino, ideal para quienes aman lo dulce sin vueltas.",
+    price: "$25.000",
+    priceGrande: "$38.000 (8 a 12 porciones)",
+    priceChico: "$25.000 (6 a 8 porciones)",
+    tags: ["Hojaldre", "Dulce de leche", "Clásico"],
+    imageUrl: "assets/img/Tortas/Torta Rogel/Torta-Rogel-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Rogel/Torta-Rogel-Arriba.webp",
+    icon: ""
+  },
+  {
+    title: "Sambayon",
+    slug: "sambayon",
+    description: "Bizcochuelo de chocolate, corazón de crema Bariloche (ganache y dulce de leche), nueces tostadas y mousse de sambayón. Clásica, intensa y para quienes disfrutan los sabores tradicionales.",
+    price: "$30.000",
+    priceGrande: "$38.000 (8 a 12 porciones)",
+    priceChico: "$30.000 (6 a 8 porciones)",
+    tags: ["Sambayón", "Cremosa", "Clásico"],
+    imageUrl: "assets/img/Tortas/Torta Sambayon/Torta-Sambayon-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Sambayon/Torta-Sambayon-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Balcarce",
+    slug: "balcarce",
+    description: "Pionono, dulce de leche, merengue crocante, nueces y crema chantilly. Hacemos la versión clásica, decorada con coco rallado y azúcar impalpable quemada. Un ícono de la pastelería argentina, nacido en la década del 50 y declarado patrimonio cultural.",
+    price: "xxxx",
+    priceGrande: "xxx (8 a 12 porciones)",
+    priceChico: "xxx (6 a 8 porciones)",
+    tags: ["Sambayón", "Cremosa", "Clásico"],
+    imageUrl: "assets/img/Tortas/Torta Balcarce/Torta-Balcarce-Arriba.webp",
+    hoverImageUrl: "assets/img/Tortas/Torta Balcarce/Torta-Balcarce-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Chocotorta",
+    slug: "chocotorta",
+    description: "Galletitas chocolinas humedecidas en chocolatada o café (a elección), con relleno de queso crema y dulce de leche. Versión XL a partir de 2 kg. Festejo asegurado. Consultános por su valor.",
+    price: "$38.000",
+    priceGrande: "$42.000 (8 a 12 porciones)",
+    priceChico: "$38.000 (6 a 8 porciones)",
+    tags: ["Dulce de leche", "Galletitas", "Clásica"],
+    imageUrl: "assets/img/Tortas/Chocotorta/Choco Torta .webp",
+    hoverImageUrl: "assets/img/Tortas/Chocotorta/Choco Torta .webp",
+    icon: ""
+  },
+],
+tartas: [
+  {
+    title: "Stroisel de Manzana",
+    slug: "stroisel-manzana",
+    description: "Base de tarta de vainilla, compota de manzana casera y crumble crocante. Es de esas tartas que siempre te hacen quedar bien. Ideal para un postre con crema batida, una bocha de helado o sola a la hora del té. Un clásico que no falla.",
+    price: "$18.000",
+    priceGrande: "$24.000 (6 a 8 porciones)",
+    priceChico: "$18.000 (4 a 6 porciones)",
+    tags: ["Manzana", "Streusel", "Vainilla"],
+    imageUrl: "assets/img/Tartas/Tarta de manzana/Tarta-Manza-Arriba.webp",
+    hoverImageUrl: "assets/img/Tartas/Tarta de manzana/Tarta-Manza-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Tarta de Pistacho",
+    slug: "tarta-pistacho",
+    description: "Base de masa sableé crocante, frangipane de pistacho suave y aromática, y compota de frutos rojos. Oh là là... ¡Qué elegancia la de Francia! Esta tarta es pura inspiración de la pastelería francesa. El pistacho aporta una textura única y la compota de frutos rojos ese toque de acidez y frescura que la equilibra. A pedido puede llevar maracuyá o frutillas frescas.",
+    price: "$22.000",
+    priceGrande: "$27.000 (6 a 8 porciones)",
+    priceChico: "$22.000 (4 a 6 porciones)",
+    tags: ["Pistacho", "Frutilla", "Arándanos"],
+    imageUrl: "assets/img/Tartas/Tarta frangipane pistacho/Tarta-Pistacho-Arriba.webp",
+    hoverImageUrl: "assets/img/Tartas/Tarta frangipane pistacho/Tarta-Pistacho-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Tarta Tofi",
+    slug: "tarta-tofi",
+    description: "Base sableé de vainilla, dulce de leche y ganache de chocolate semiamargo. Cada bocado es como comerse un bombón. Si sos goloso, esta es tu tarta.",
+    price: "$18.000",
+    priceGrande: "$24.000 (6 a 8 porciones)",
+    priceChico: "$18.000 (4 a 6 porciones)",
+    tags: ["Dulce de leche", "Chocolate con leche", "Tentadora"],
+    imageUrl: "assets/img/Tartas/Tarta Tofi/Tarta-Tofi-Arriba.webp",
+    hoverImageUrl: "assets/img/Tartas/Tarta Tofi/Tarta-Tofi-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Alice Orange Pie",
+    slug: "alice-orange-pie",
+    description: "Base de vainilla, crema fresca de naranja y naranjas confitadas. ¡Súper fresca! El toque de las naranjas confitadas lo es todo. Simple, elegante y con ese perfume que enamora.",
+    price: "$18.000",
+    priceGrande: "$22.000 (6 a 8 porciones)",
+    priceChico: "$18.000 (4 a 6 porciones)",
+    tags: ["Naranja", "Confitadas", "Vainilla"],
+    imageUrl: "assets/img/Tartas/Tarta Naranja/Tarta-Naranja-Arriba.webp",
+    hoverImageUrl: "assets/img/Tartas/Tarta Naranja/Tarta-Naranja-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Lemon Pie",
+    slug: "lemon-pie",
+    description: "Base de tarta de vainilla, crema de limón y merengue. Acidez, frescura y el mejor merengue. Lo hacemos con cariño, cuidando que el equilibrio entre dulce y ácido sea perfecto.",
+    price: "$14.000",
+    priceGrande: "$20.000 (6 a 8 porciones)",
+    priceChico: "$14.000 (4 a 6 porciones)",
+    tags: ["Limón", "Merengue", "Vainilla"],
+    imageUrl: "assets/img/Tartas/Lemon Pie/Tarta-LemonPie-Arriba.webp",
+    hoverImageUrl: "assets/img/Tartas/Lemon Pie/Tarta-LemonPie-Costado.webp",
+    icon: ""
+  },
+  {
+    title: "Tarta Frutilla",
+    slug: "tarta-frutilla",
+    description: "Base de tarta de vainilla, crema chantilly, frutillas frescas y gelatina de frutilla. Una de esas que nunca, nunca fallan. Solo la hacemos con fruta de estación, bien fresca. Opción: se puede hacer con crema pastelera a pedido. Hecha solo en temporada.",
+    price: "$28.000",
+    priceGrande: "$32.000 (6 a 8 porciones)",
+    priceChico: "$28.000 (4 a 6 porciones)",
+    tags: ["Frutilla", "Chantilly", "Vainilla"],
+    imageUrl: "assets/img/Tartas/Tarta de frutilla/Copia de tarta frutilla.webp",
+    hoverImageUrl: "assets/img/Tartas/Tarta de frutilla/Copia de tarta frutilla.webp",
+    icon: ""
+  }
+],
  "sanguches-de-miga": [
   {
     title: "Sanguches de Miga",
@@ -362,9 +350,9 @@ export const MENU_DATA: Record<string, Producto[]> = {
     imageUrl: "assets/img/Sandwich/sandwich1.webp",
     hoverImageUrl: "assets/img/Sandwich/sandwich2.webp",
     gallery: [
-      "assets/img/Sandwich/sandwich1.webp",
-      "assets/img/Sandwich/sandwich2.webp",
-      "assets/img/Sandwich/sandwich3.webp"
+      "assets/img/Sandwich/sandwichmega.jpg",
+      "assets/img/Sandwich/Portada-SandwichDeMiga.webp",
+      "assets/img/Sandwich/sandwichjamonyqueso.webp"
     ],
     icon: ""
   }
@@ -375,8 +363,8 @@ alfajores: [
     slug: "lunnettes",
     description: "Dulce de leche montado en forma de copete, cubierto con un intenso baño de chocolate semiamargo. Elegante y moderno.",
     price: "xxxx",
-    price6a8: "xxx",
-    price4a6: "xxx",
+    priceGrande: "xxx",
+    priceChico: "xxx",
     tags: ["Dulce de leche", "Chocolate", "Moderno"],
     imageUrl: "assets/img/Alfajores/Lunnettes-Arriba.webp",
     hoverImageUrl: "assets/img/Alfajores/Lunnettes-Costado.webp",
@@ -387,8 +375,8 @@ alfajores: [
     slug: "maicena",
     description: "Dos tapas de maicena rellenas con abundante dulce de leche, rebozadas en coco rallado. Clásico de siempre.",
     price: "xxxx",
-    price6a8: "$xxxx x6",
-    price4a6: "xxx",
+    priceGrande: "$xxxx x6",
+    priceChico: "xxx",
     tags: ["Maicena", "Coco", "Dulce de leche"],
     imageUrl: "assets/img/Alfajores/Maicena-Arriba.webp",
     hoverImageUrl: "assets/img/Alfajores/Maicena-Costado.webp",
@@ -399,8 +387,8 @@ alfajores: [
     slug: "clasicos",
     description: "Alfajores rellenos de dulce de leche y bañados en chocolate semiamargo. La versión artesanal del infaltable argentino.",
     price: "xxxx",
-    price6a8: "$xxxx x6",
-    price4a6: "xxx",
+    priceGrande: "$xxxx x6",
+    priceChico: "xxx",
     tags: ["Chocolate", "Dulce de leche", "Tradicional"],
     imageUrl: "assets/img/Alfajores/Clasicos-Arriba.webp",
     hoverImageUrl: "assets/img/Alfajores/Clasicos-Costado.webp",
@@ -411,8 +399,8 @@ alfajores: [
     slug: "nuez",
     description: "Tapas con nuez molida, relleno de dulce de leche y una cobertura ligera de glasé. Suave y elegante.",
     price: "xxxx",
-    price6a8: "xxx",
-    price4a6: "xxx",
+    priceGrande: "xxx",
+    priceChico: "xxx",
     tags: ["Nuez", "Glasé", "Suave"],
     imageUrl: "assets/img/Alfajores/Nuez-Arriba.webp",
     hoverImageUrl: "assets/img/Alfajores/Nuez-Costado.webp",
@@ -423,8 +411,8 @@ alfajores: [
     slug: "membrillo",
     description: "Dos suaves tapas rellenas de dulce de membrillo artesanal. Para los que aman lo tradicional.",
     price: "xxxx",
-    price6a8: "xxx",
-    price4a6: "xxx",
+    priceGrande: "xxx",
+    priceChico: "xxx",
     tags: ["Membrillo", "Tradicional", "Artesanal"],
     imageUrl: "assets/img/Alfajores/Membrillo-Arriba.webp",
     hoverImageUrl: "assets/img/Alfajores/Membrillo-Costado.webp",
@@ -435,8 +423,8 @@ alfajores: [
     slug: "marplatense-chocolate",
     description: "Alfajor estilo marplatense con doble capa de galletita rellena de dulce de leche y baño de chocolate.",
     price: "xxxx",
-    price6a8: "xxx",
-    price4a6: "xxx",
+    priceGrande: "xxx",
+    priceChico: "xxx",
     tags: ["Marplatense", "Chocolate", "Galletita"],
     imageUrl: "assets/img/Alfajores/Marplatense-Chocolate-Arriba.webp",
     hoverImageUrl: "assets/img/Alfajores/Marplatense-Chocolate-Costado.webp",
@@ -447,8 +435,8 @@ alfajores: [
     slug: "marplatense-merengue",
     description: "Versión marplatense con baño blanco de merengue. Textura suave, sabor delicado.",
     price: "xxxx",
-    price6a8: "xxx",
-    price4a6: "xxx",
+    priceGrande: "xxx",
+    priceChico: "xxx",
     tags: ["Merengue", "Marplatense", "Dulce de leche"],
     imageUrl: "assets/img/Alfajores/Marplatense-Merengue-Arriba.webp",
     hoverImageUrl: "assets/img/Alfajores/Marplatense-Merengue-Costado.webp",
@@ -459,8 +447,8 @@ alfajores: [
     slug: "frutos-rojos",
     description: "Relleno de frutos rojos naturales entre tapas suaves. Una opción frutada y diferente.",
     price: "xxxx",
-    price6a8: "xxx",
-    price4a6: "xxx",
+    priceGrande: "xxx",
+    priceChico: "xxx",
     tags: ["Frutos rojos", "Original", "Frutado"],
     imageUrl: "assets/img/Alfajores/FrutosRojos-Arriba.webp",
     hoverImageUrl: "assets/img/Alfajores/FrutosRojos-Costado.webp",
@@ -476,9 +464,11 @@ cookies : [
     price:"",
     icon:"",
     gallery:[
-      "assets/img/Sandwich/sandwich1.webp",
-      "assets/img/Sandwich/sandwich1.webp",
-      "assets/img/Sandwich/sandwich1.webp"
+      "assets/img/Cookies/choco.webp",
+      "assets/img/Cookies/avena.webp",
+      "assets/img/Cookies/mani.webp",
+      "assets/img/Cookies/pistacho.webp",
+      "assets/img/Cookies/velvet.webp"
     ],
     tabGroups: [
       {
@@ -508,9 +498,11 @@ boulangerie: [
     hoverImageUrl: "assets/img/Boulangerie/Boulangerie-General-Hover.webp",
     icon: "",
     gallery: [
-      "assets/img/Boulangerie/Boulangerie-General.webp",
-      "assets/img/Boulangerie/MediaLuna.webp",
-      "assets/img/Boulangerie/Pan-Multicereal.webp"
+      "assets/img/boulangerie.jpg",
+      "assets/img/Boulangerie/scones.webp",
+      "assets/img/Boulangerie/accsad.webp",
+      "assets/img/Boulangerie/budines.webp",
+      "assets/img/Boulangerie/masassecas.webp",
     ],
     tabGroups: [
       {
@@ -584,9 +576,9 @@ cuadrados: [
     price: "",
     icon: "",
     gallery: [
-      "assets/img/Cuadrados/Cuadrados-General.webp",
-      "assets/img/Cuadrados/Cuadrado-Manzana.webp",
-      "assets/img/Cuadrados/Cuadrado-Brownie.webp"
+      "assets/img/Cuadraditos/Cuadraditos-portada.webp",
+      "assets/img/Cuadraditos/Cuadraditos1.webp",
+      "assets/img/Cuadraditos/cuadraditos2.webp"
     ],
     tabGroups: [
       {
@@ -614,9 +606,4 @@ cuadrados: [
     ]
   }
 ]
-
-
-
-
-
 };

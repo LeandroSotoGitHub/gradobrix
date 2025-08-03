@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { SectionMenuComponent } from './Section-Menu/section-menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { WhatsappBTNComponent } from './whatsapp-btn/whatsapp-btn.component';
+import { BackBtnComponent } from './back-btn/back-btn.component';
 
 
 
@@ -19,7 +20,8 @@ import { WhatsappBTNComponent } from './whatsapp-btn/whatsapp-btn.component';
     SectionMenuComponent,
     CardComponent,
     FooterComponent,
-    WhatsappBTNComponent
+    WhatsappBTNComponent,
+    BackBtnComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { WhatsappBTNComponent } from './whatsapp-btn/whatsapp-btn.component';
     RouterModule,
     SectionMenuComponent,
     FooterComponent,
-    WhatsappBTNComponent
+    WhatsappBTNComponent,
+    BackBtnComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

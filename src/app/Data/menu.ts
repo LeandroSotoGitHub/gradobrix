@@ -505,7 +505,7 @@ boulangerie: [
     icon: "",
     gallery: [
       "assets/img/boulangerie.jpg",
-      
+      "assets/img/Boulangerie/mediaslunas.webp",
       "assets/img/Boulangerie/scones.webp",
       "assets/img/Boulangerie/accsad.webp",
       "assets/img/Boulangerie/budines.webp",

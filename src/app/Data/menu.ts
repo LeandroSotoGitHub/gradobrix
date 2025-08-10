@@ -19,9 +19,9 @@ tortas: [
     title: "Ascensión",
     slug: "ascension",
     description: "Base húmeda de chocolate sin harina, rellena de crema de dulce de leche. Un clásico de nuestra pastelería.Nació en casa: la creó mi mamá pensando en mi hermano y en mí, que somos celíacos. En una época en la que no había muchas opciones, esta torta fue nuestro refugio. Con el tiempo se volvió la favorita de todos. No es empalagosa y, si la probás helada, descubrís otra forma de enamorarte de ella.",
-    price: "$30.000",
-    priceGrande: "$38.000 (8 a 12 porciones)",
-    priceChico: "$30.000 (6 a 8 porciones)",
+    price: "30.000",
+    priceGrande: "38.000 (8 a 12 porciones)",
+    priceChico: "30.000 (6 a 8 porciones)",
     tags: ["Sin harina", "Dulce de leche", "Chocolate"],
     imageUrl: "assets/img/Tortas/Torta Asensión/Torta-Asesion-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta Asensión/Torta-Asesion-Costado.webp",
@@ -31,9 +31,9 @@ tortas: [
     title: "New York Cheesecake",
     slug: "new-york-cheesecake",
     description: "Base de galletitas de vainilla, crema de queso horneada y compota casera de frutos del bosque. Nuestra versión clásica: cremosa, equilibrada y con el contraste justo entre dulzura y acidez.",
-    price: "$38.000",
-    priceGrande: "$49.000 (8 a 12 porciones)",
-    priceChico: "$38.000 (6 a 8 porciones)",
+    price: "38.000",
+    priceGrande: "49.000 (8 a 12 porciones)",
+    priceChico: "38.000 (6 a 8 porciones)",
     tags: ["Cheesecake", "Frutos rojos", "Galletitas"],
     imageUrl: "assets/img/Tortas/Torta New York CheeseCake/Torta-Cheesecake-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta New York CheeseCake/Torta-Cheesecake-Costado.webp",
@@ -43,9 +43,9 @@ tortas: [
     title: "Chini-Brownie",
     slug: "chini-brownie",
     description: "Base de brownie húmedo, dulce de leche, crema suave y merengue suizo. Una torta que marcó tendencia y llegó para quedarse. Las texturas y sabores se combinan para ofrecer un postre inolvidable.",
-    price: "$30.000",
-    priceGrande: "$35.000 (8 a 12 porciones)",
-    priceChico: "$30.000 (6 a 8 porciones)",
+    price: "30.000",
+    priceGrande: "35.000 (8 a 12 porciones)",
+    priceChico: "30.000 (6 a 8 porciones)",
     tags: ["Brownie", "Dulce de leche", "Merengue"],
     imageUrl: "assets/img/Tortas/Torta Brownie/Torta-Brownie-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta Brownie/Torta-Brownie-Costado.webp",
@@ -55,9 +55,9 @@ tortas: [
     title: "Tiramisú",
     slug: "tiramisu",
     description: "Base de vainillas humedecidas con almíbar de café y una crema de queso mascarpone.",
-    price: "$27.000",
-    priceGrande: "$38.000 (8 a 12 porciones)",
-    priceChico: "$27.000 (6 a 8 porciones)",
+    price: "27.000",
+    priceGrande: "38.000 (8 a 12 porciones)",
+    priceChico: "27.000 (6 a 8 porciones)",
     tags: ["Café", "Vainillas", "Mascarpone"],
     imageUrl: "assets/img/Tortas/Torta Tiramisú/Torta-Tiramisu-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta Tiramisú/Torta-Tiramisu-Costado.webp",
@@ -67,9 +67,9 @@ tortas: [
     title: "Oreo Cheesecake",
     slug: "oreo-cheesecake",
     description: "Base de galletitas Oreo, dulce de leche y mousse de crema americana. Una versión moderna del clásico. Chicos y grandes la eligen. La mousse suaviza lo dulce y realza todo su sabor",
-    price: "$45.000",
-    priceGrande: "$48.000 (8 a 12 porciones)",
-    priceChico: "$45.000 (6 a 8 porciones)",
+    price: "45.000",
+    priceGrande: "48.000 (8 a 12 porciones)",
+    priceChico: "45.000 (6 a 8 porciones)",
     tags: ["Oreo", "Dulce de leche", "Cheesecake"],
     imageUrl: "assets/img/Tortas/Torta oreo Cheese Cake/Torta-OreoCheesecake-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta oreo Cheese Cake/Torta-OreoCheesecake-Costado.webp",
@@ -79,9 +79,9 @@ tortas: [
     title: "Dulce Otoño",
     slug: "dulce-otono",
     description: "Base de brownie, corazón de dulce de leche y mousse de chocolate semiamargo. Una torta que hago desde mis comienzos. A pesar de su nombre, es rica todo el año. Las texturas se funden en cada bocado y siempre vuelve a enamorar.",
-    price: "$38.000",
-    priceGrande: "$42.000 (8 a 12 porciones)",
-    priceChico: "$38.000 (6 a 8 porciones)",
+    price: "38.000",
+    priceGrande: "42.000 (8 a 12 porciones)",
+    priceChico: "38.000 (6 a 8 porciones)",
     tags: ["Brownie", "Mousse de chocolate", "Dulce de leche"],
     imageUrl: "assets/img/Tortas/Torta dulce otoño/Torta-DulceOtoño-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta dulce otoño/Torta-DulceOtoño-Costado.webp",
@@ -91,9 +91,9 @@ tortas: [
     title: "Tres Chocolates",
     slug: "tres-chocolates",
     description: "Bizcochuelo de vainilla, corazón de dulce de leche y mousse de chocolate blanco, con leche y semiamargo. Una combinación irresistible para quienes aman el chocolate. Equilibrio perfecto entre intensidad y suavidad.",
-    price: "$30.000",
-    priceGrande: "$38.000 (8 a 12 porciones)",
-    priceChico: "$30.000 (6 a 8 porciones)",
+    price: "30.000",
+    priceGrande: "38.000 (8 a 12 porciones)",
+    priceChico: "30.000 (6 a 8 porciones)",
     tags: ["Chocolate blanco", "Chocolate con leche", "Chocolate amargo"],
     imageUrl: "assets/img/Tortas/Tres chocolates/Torta-TresChocolates-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Tres chocolates/Torta-TresChocolates-Costado.webp",
@@ -103,9 +103,9 @@ tortas: [
     title: "Mousse de Maracuyá",
     slug: "mousse-maracuya",
     description: "Bizcochuelo de vainilla, interior de chocolate blanco y mousse aireada de maracuyá. Fresca, vibrante y elegante. Un glaseado brillante corona esta torta inolvidable.",
-    price: "$25.000",
-    priceGrande: "$32.000 (8 a 12 porciones)",
-    priceChico: "$25.000 (6 a 8 porciones)",
+    price: "25.000",
+    priceGrande: "32.000 (8 a 12 porciones)",
+    priceChico: "25.000 (6 a 8 porciones)",
     tags: ["Maracuyá", "Mousse", "Chocolate blanco"],
     imageUrl: "assets/img/Tortas/Torta Mousse Maracuya/Torta-MousseMaracuya-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta Mousse Maracuya/Torta-MousseMaracuya-Costado.webp",
@@ -115,9 +115,9 @@ tortas: [
     title: "Mousse de Frutilla",
     slug: "mousse-frutilla",
     description: "Base de bizcochuelo de vainilla, almíbar de frutilla y mousse de frutilla.",
-    price: "$40.000",
-    priceGrande: "$45.000 (8 a 12 porciones)",
-    priceChico: "$40.000 (6 a 8 porciones)",
+    price: "40.000",
+    priceGrande: "45.000 (8 a 12 porciones)",
+    priceChico: "40.000 (6 a 8 porciones)",
     tags: ["Frutilla", "Mousse", "Bizcochuelo"],
     imageUrl: "assets/img/tortas/frutilla.webp",
     hoverImageUrl: "",
@@ -127,9 +127,9 @@ tortas: [
     title: "Choco Naranja",
     slug: "choco-naranja",
     description: "Biscuit de chocolate, mousse de naranja y mousse de chocolate semiamargo. Una combinación sofisticada y fresca. Decorada con naranjas confitadas, que realzan su sabor y elegancia.",
-    price: "$25.000",
-    priceGrande: "$30.000 (8 a 12 porciones)",
-    priceChico: "$25.000 (6 a 8 porciones)",
+    price: "25.000",
+    priceGrande: "30.000 (8 a 12 porciones)",
+    priceChico: "25.000 (6 a 8 porciones)",
     tags: ["Chocolate", "Naranja", "Intensa"],
     imageUrl: "assets/img/Tortas/Torta Choco Naranja/Torta-ChocoNaranja-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta Choco Naranja/Torta-ChocoNaranja-Costado.webp",
@@ -139,9 +139,9 @@ tortas: [
     title: "Matilda",
     slug: "matilda-argento",
     description: "Bizcochuelo húmedo de chocolate, doble capa de dulce de leche y ganache de chocolate semiamargo. Intensa y golosa. Te transporta a la infancia, como si estuvieras dentro de una escena de película. Perfecta para festejos.",
-    price: "$35.000",
-    priceGrande: "$42.000 (12 a 18 porciones)",
-    priceChico: "$35.000 (8 a 10 porciones)",
+    price: "35.000",
+    priceGrande: "42.000 (12 a 18 porciones)",
+    priceChico: "35.000 (8 a 10 porciones)",
     tags: ["Chocolate", "Dulce de leche", "Húmedo"],
     imageUrl: "assets/img/Tortas/Matilda/Torta-Matilda-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Matilda/Torta-Matilda-Costado.webp",
@@ -151,9 +151,9 @@ tortas: [
     title: "Honor a Doña Petrona",
     slug: "honor-dona-petrona",
     description: "Bizcochuelo de vainilla húmedo, relleno de dulce de leche con merengues crocantes, crema y frutillas a la reina. A pedido, se puede reemplazar por duraznos en almíbar. Esta torta nació como un tributo a la maestra de la cocina argentina. Evoca tradición, pastelería casera y recetas que marcaron generaciones.",
-    price: "$35.000",
-    priceGrande: "$42.000 (12 a 18 porciones)",
-    priceChico: "$35.000 (8 a 10 porciones)",
+    price: "35.000",
+    priceGrande: "42.000 (12 a 18 porciones)",
+    priceChico: "35.000 (8 a 10 porciones)",
     tags: ["Frutilla", "Crema chantilly", "Bizcochuelo"],
     imageUrl: "assets/img/Tortas/Torta Doña Petrona/Torta-DoñaPetrona-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta Doña Petrona/Torta-DoñaPetrona-Costado.webp",
@@ -163,9 +163,9 @@ tortas: [
     title: "Mil Hojas",
     slug: "mil-hojas",
     description: "Capas de masa fina y hojaldrada, intercaladas con dulce de leche y cubiertas con merengue. Un clásico argentino, ideal para quienes aman lo dulce sin vueltas.",
-    price: "$25.000",
-    priceGrande: "$38.000 (8 a 12 porciones)",
-    priceChico: "$25.000 (6 a 8 porciones)",
+    price: "25.000",
+    priceGrande: "38.000 (8 a 12 porciones)",
+    priceChico: "25.000 (6 a 8 porciones)",
     tags: ["Hojaldre", "Dulce de leche", "Clásico"],
     imageUrl: "assets/img/Tortas/Torta Rogel/Torta-Rogel-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta Rogel/Torta-Rogel-Arriba.webp",
@@ -175,9 +175,9 @@ tortas: [
     title: "Sambayon",
     slug: "sambayon",
     description: "Bizcochuelo de chocolate, corazón de crema Bariloche (ganache y dulce de leche), nueces tostadas y mousse de sambayón. Clásica, intensa y para quienes disfrutan los sabores tradicionales.",
-    price: "$30.000",
-    priceGrande: "$38.000 (8 a 12 porciones)",
-    priceChico: "$30.000 (6 a 8 porciones)",
+    price: "30.000",
+    priceGrande: "38.000 (8 a 12 porciones)",
+    priceChico: "30.000 (6 a 8 porciones)",
     tags: ["Sambayón", "Cremosa", "Clásico"],
     imageUrl: "assets/img/Tortas/Torta Sambayon/Torta-Sambayon-Arriba.webp",
     hoverImageUrl: "assets/img/Tortas/Torta Sambayon/Torta-Sambayon-Costado.webp",
@@ -199,9 +199,9 @@ tortas: [
     title: "Chocotorta",
     slug: "chocotorta",
     description: "Galletitas chocolinas humedecidas en chocolatada o café (a elección), con relleno de queso crema y dulce de leche. Versión XL a partir de 2 kg. Festejo asegurado. Consultános por su valor.",
-    price: "$38.000",
-    priceGrande: "$42.000 (8 a 12 porciones)",
-    priceChico: "$38.000 (6 a 8 porciones)",
+    price: "38.000",
+    priceGrande: "42.000 (8 a 12 porciones)",
+    priceChico: "38.000 (6 a 8 porciones)",
     tags: ["Dulce de leche", "Galletitas", "Clásica"],
     imageUrl: "assets/img/Tortas/Chocotorta/Choco Torta .webp",
     hoverImageUrl: "assets/img/Tortas/Chocotorta/Choco Torta .webp",
@@ -213,9 +213,9 @@ tartas: [
     title: "Stroisel de Manzana",
     slug: "stroisel-manzana",
     description: "Base de tarta de vainilla, compota de manzana casera y crumble crocante. Es de esas tartas que siempre te hacen quedar bien. Ideal para un postre con crema batida, una bocha de helado o sola a la hora del té. Un clásico que no falla.",
-    price: "$18.000",
-    priceGrande: "$24.000 (6 a 8 porciones)",
-    priceChico: "$18.000 (4 a 6 porciones)",
+    price: "18.000",
+    priceGrande: "24.000 (6 a 8 porciones)",
+    priceChico: "18.000 (4 a 6 porciones)",
     tags: ["Manzana", "Streusel", "Vainilla"],
     imageUrl: "assets/img/Tartas/Tarta de manzana/Tarta-Manza-Arriba.webp",
     hoverImageUrl: "assets/img/Tartas/Tarta de manzana/Tarta-Manza-Costado.webp",
@@ -225,9 +225,9 @@ tartas: [
     title: "Tarta de Pistacho",
     slug: "tarta-pistacho",
     description: "Base de masa sableé crocante, frangipane de pistacho suave y aromática, y compota de frutos rojos. Oh là là... ¡Qué elegancia la de Francia! Esta tarta es pura inspiración de la pastelería francesa. El pistacho aporta una textura única y la compota de frutos rojos ese toque de acidez y frescura que la equilibra. A pedido puede llevar maracuyá o frutillas frescas.",
-    price: "$22.000",
-    priceGrande: "$27.000 (6 a 8 porciones)",
-    priceChico: "$22.000 (4 a 6 porciones)",
+    price: "22.000",
+    priceGrande: "27.000 (6 a 8 porciones)",
+    priceChico: "22.000 (4 a 6 porciones)",
     tags: ["Pistacho", "Frutilla", "Arándanos"],
     imageUrl: "assets/img/Tartas/Tarta frangipane pistacho/Tarta-Pistacho-Arriba.webp",
     hoverImageUrl: "assets/img/Tartas/Tarta frangipane pistacho/Tarta-Pistacho-Costado.webp",
@@ -237,9 +237,9 @@ tartas: [
     title: "Tarta Tofi",
     slug: "tarta-tofi",
     description: "Base sableé de vainilla, dulce de leche y ganache de chocolate semiamargo. Cada bocado es como comerse un bombón. Si sos goloso, esta es tu tarta.",
-    price: "$18.000",
-    priceGrande: "$24.000 (6 a 8 porciones)",
-    priceChico: "$18.000 (4 a 6 porciones)",
+    price: "18.000",
+    priceGrande: "24.000 (6 a 8 porciones)",
+    priceChico: "18.000 (4 a 6 porciones)",
     tags: ["Dulce de leche", "Chocolate con leche", "Tentadora"],
     imageUrl: "assets/img/Tartas/Tarta Tofi/Tarta-Tofi-Arriba.webp",
     hoverImageUrl: "assets/img/Tartas/Tarta Tofi/Tarta-Tofi-Costado.webp",
@@ -249,9 +249,9 @@ tartas: [
     title: "Alice Orange Pie",
     slug: "alice-orange-pie",
     description: "Base de vainilla, crema fresca de naranja y naranjas confitadas. ¡Súper fresca! El toque de las naranjas confitadas lo es todo. Simple, elegante y con ese perfume que enamora.",
-    price: "$18.000",
-    priceGrande: "$22.000 (6 a 8 porciones)",
-    priceChico: "$18.000 (4 a 6 porciones)",
+    price: "18.000",
+    priceGrande: "22.000 (6 a 8 porciones)",
+    priceChico: "18.000 (4 a 6 porciones)",
     tags: ["Naranja", "Confitadas", "Vainilla"],
     imageUrl: "assets/img/Tartas/Tarta Naranja/Tarta-Naranja-Arriba.webp",
     hoverImageUrl: "assets/img/Tartas/Tarta Naranja/Tarta-Naranja-Costado.webp",
@@ -261,9 +261,9 @@ tartas: [
     title: "Lemon Pie",
     slug: "lemon-pie",
     description: "Base de tarta de vainilla, crema de limón y merengue. Acidez, frescura y el mejor merengue. Lo hacemos con cariño, cuidando que el equilibrio entre dulce y ácido sea perfecto.",
-    price: "$14.000",
-    priceGrande: "$20.000 (6 a 8 porciones)",
-    priceChico: "$14.000 (4 a 6 porciones)",
+    price: "14.000",
+    priceGrande: "20.000 (6 a 8 porciones)",
+    priceChico: "14.000 (4 a 6 porciones)",
     tags: ["Limón", "Merengue", "Vainilla"],
     imageUrl: "assets/img/Tartas/Lemon Pie/Tarta-LemonPie-Arriba.webp",
     hoverImageUrl: "assets/img/Tartas/Lemon Pie/Tarta-LemonPie-Costado.webp",
@@ -273,9 +273,9 @@ tartas: [
     title: "Tarta Frutilla",
     slug: "tarta-frutilla",
     description: "Base de tarta de vainilla, crema chantilly, frutillas frescas y gelatina de frutilla. Una de esas que nunca, nunca fallan. Solo la hacemos con fruta de estación, bien fresca. Opción: se puede hacer con crema pastelera a pedido. Hecha solo en temporada.",
-    price: "$28.000",
-    priceGrande: "$32.000 (6 a 8 porciones)",
-    priceChico: "$28.000 (4 a 6 porciones)",
+    price: "28.000",
+    priceGrande: "32.000 (6 a 8 porciones)",
+    priceChico: "28.000 (4 a 6 porciones)",
     tags: ["Frutilla", "Chantilly", "Vainilla"],
     imageUrl: "assets/img/Tartas/Tarta de frutilla/Copia de tarta frutilla.webp",
     hoverImageUrl: "assets/img/Tartas/Tarta de frutilla/Copia de tarta frutilla.webp",
@@ -291,9 +291,11 @@ tartas: [
         label: "Triples Clásicos",
         description: "Nuestros sabores más tradicionales y pedidos: simples, ricos y perfectos para todos los gustos.",
         price: {
-                docena: "$9000",
-                mediaDocena: "$4800",
-                unidad: "$850"
+                cuatroDocenas:"$100.000",
+                dosDocenas:"$50.000",
+                docena: "$25.000",
+                mediaDocena: "$12.500",
+                unidad: "$2.500"
         },
         sabores: [
           "Jamón cocido y queso",
@@ -308,9 +310,11 @@ tartas: [
         label: "Triples Especiales",
         description: "Una combinación de sabores únicos que elevan el clásico sándwich a otro nivel.",
         price: {
-                docena: "$9000",
-                mediaDocena: "$4800",
-                unidad: "$850"
+                cuatroDocenas:"$140.000",
+                dosDocenas:"$70.000",
+                docena: "$35.000",
+                mediaDocena: "$17.500",
+                unidad: "$3.500"
         },
         sabores: [
           "Jamón crudo y queso (pan negro)",
@@ -329,24 +333,26 @@ tartas: [
       },
       {
         label: "Triples Gourmet",
-        description: "Elaborados con ingredientes seleccionados y combinaciones premium. Para los que buscan algo diferente.",
-        price: {
-                docena: "$9000",
-                mediaDocena: "$4800",
-                unidad: "$850"
-        },
+        description: "Elaborados con ingredientes seleccionados y combinaciones premium. Para los que buscan algo diferente. (Todos vienen en pan negro)",
+        // price: {
+        //         cuatroDocenas:"140000",
+        //         dosDocenas:"70000",
+        //         docena: "35000",
+        //         mediaDocena: "17500",
+        //         unidad: "3500"
+        // },
         sabores: [
-          "Jamón crudo, rúcula y queso crema mediterráneo: jamón crudo, queso, tomates secos hidratados en aceite de oliva, ajo y albahaca.",
+          "Jamón crudo, rúcula y queso crema mediterráneo: jamón crudo, queso, tomates secos hidratados en aceite de oliva, ajo y albahaca. Precio: $2500u",
           "Salmón: salmón ahumado, queso crema y ciboulette.",
           "Crema de palta: salmón ahumado, rúcula y huevo.",
-          "Pollo Crispi: pollo, queso cheddar, panceta crocante y verdeo.",
-          "Caesar: pollo, queso, lechuga, queso de rallar y salsa caesar.",
+          "Pollo Crispi: pollo, queso cheddar, panceta crocante y verdeo. Precio: $4500u",
+          "Caesar: pollo, queso, lechuga, queso de rallar y salsa caesar. Precio: $4500u",
           "Crema de palta: pollo, queso, panceta crocante y ciboulette.",
           "Vitel Toné: peceto, crema vitel toné y queso."
         ]
       }
     ],
-    price: "$xxxx",
+    price: "xxxx",
     imageUrl: "assets/img/Sandwich/sandwich1.webp",
     hoverImageUrl: "assets/img/Sandwich/sandwich2.webp",
     gallery: [
@@ -375,7 +381,7 @@ alfajores: [
     slug: "maicena",
     description: "Dos tapas de maicena rellenas con abundante dulce de leche, rebozadas en coco rallado. Clásico de siempre.",
     price: "xxxx",
-    priceGrande: "$xxxx x6",
+    priceGrande: "xxxx x6",
     priceChico: "xxx",
     tags: ["Maicena", "Coco", "Dulce de leche"],
     imageUrl: "assets/img/Alfajores/Maicena-Arriba.webp",
@@ -387,7 +393,7 @@ alfajores: [
     slug: "clasicos",
     description: "Alfajores rellenos de dulce de leche y bañados en chocolate semiamargo. La versión artesanal del infaltable argentino.",
     price: "xxxx",
-    priceGrande: "$xxxx x6",
+    priceGrande: "xxxx x6",
     priceChico: "xxx",
     tags: ["Chocolate", "Dulce de leche", "Tradicional"],
     imageUrl: "assets/img/Alfajores/Clasicos-Arriba.webp",
@@ -475,9 +481,9 @@ cookies : [
         label: "Nuestros alfajores",
         description: "Conocé algunos de nuestros mejores gustos:",
         price: {
-                docena: "$XXX",
-                mediaDocena: "$XXX",
-                unidad: "$XXX"
+                docena: "XXX",
+                mediaDocena: "XXX",
+                unidad: "XXX"
         },
         sabores: [
           "Red velvet",
@@ -499,6 +505,7 @@ boulangerie: [
     icon: "",
     gallery: [
       "assets/img/boulangerie.jpg",
+      
       "assets/img/Boulangerie/scones.webp",
       "assets/img/Boulangerie/accsad.webp",
       "assets/img/Boulangerie/budines.webp",
@@ -516,8 +523,8 @@ boulangerie: [
           "Fosforitos de jamón y queso"
         ],
         price: {
-          unidad: "$xxx",
-          docena: "$xxx"
+          unidad: "xxx",
+          docena: "xxx"
         }
       },
       {
@@ -533,7 +540,7 @@ boulangerie: [
           "Cookies manteca de maní y confites de colores"
         ],
         price: {
-          bandeja: "$xxx"
+          bandeja: "xxx"
         }
       },
       {
@@ -548,7 +555,7 @@ boulangerie: [
           "Vainilla y chocolate"
         ],
         price: {
-          unidad: "$xxx"
+          unidad: "xxx"
         }
       },
       {
@@ -560,8 +567,8 @@ boulangerie: [
           "Merengues rellenos de dulce de leche"
         ],
         price: {
-          unidad: "$xxx",
-          mediaDocena: "$xxx"
+          unidad: "xxx",
+          mediaDocena: "xxx"
         }
       }
     ]
@@ -584,23 +591,22 @@ cuadrados: [
       {
         label: "Sabores de cuadrados",
         description: "Nuestros cuadrados son ideales para una porción individual con todo el sabor artesanal de °Brix.",
-        price: {
-          unidad: "$xxx",
-          bandeja: "$xxx"
-        },
+        // price: {
+        //   unidad: "xxx",
+        //   bandeja: "xxx"
+        // },
         sabores: [
-          "Manzana",
-          "Coco y dulce de leche",
-          "Pasta frola de membrillo",
-          "Pasta frola de batata",
-          "Naranja",
-          "Limón",
-          "Ricota",
-          "Stroisel de frutos rojos",
-          "Brownies con nuez",
-          "Brownies con chips de chocolate",
-          "Carrot cake",
-          "Matera"
+          "Manzana. Precio: $5.000",
+          "Coco y dulce de leche. Precio: $4.900",
+          "Pasta frola de membrillo. Precio: $3.000",
+          "Pasta frola de batata. Precio: $3.000",
+          "Naranja. Precio: $2.000",
+          "Limón. Precio: $2.000",
+          "Ricota. Precio: $3.500",
+          "Stroisel de frutos rojos. Precio: $4.500",
+          "Brownies con nuez y sin nuez. Precio: $3.500 & $3.200",
+          "Carrot cake. Precio: $3.500",
+          "Matera. Precio: $2.000"
         ]
       }
     ]

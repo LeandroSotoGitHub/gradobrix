@@ -38,8 +38,13 @@ export class SectionMenuComponent implements AfterViewInit {
       slug: 'general',
       Routing: '/menu/cookies/general'
     },
-    {title: 'Alfajores',imageSrc: 'assets/img/Alfajor/Portada-Alfajores.webp', isSingle: true, Routing: '/menu/alfajores'},
-
+    {
+      title: 'Alfajores',
+      imageSrc: 'assets/img/Alfajor/Portada-Alfajores.webp',
+      isSingle: true,
+      slug: 'general',
+      Routing: '/menu/alfajores/general'
+    }
   ];
 
   constructor(private scrollAnimation: ScrollAnimationService) {}

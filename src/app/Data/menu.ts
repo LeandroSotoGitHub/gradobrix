@@ -343,12 +343,12 @@ tartas: [
         // },
         sabores: [
           "Jamón crudo, rúcula y queso crema mediterráneo: jamón crudo, queso, tomates secos hidratados en aceite de oliva, ajo y albahaca. Precio: $2500u",
-          "Salmón: salmón ahumado, queso crema y ciboulette.",
-          "Crema de palta: salmón ahumado, rúcula y huevo.",
+          "Salmón: salmón ahumado, queso crema y ciboulette. Precio: $8000u",
+          "Queso y atún. Precio: $5000u",
           "Pollo Crispi: pollo, queso cheddar, panceta crocante y verdeo. Precio: $4500u",
-          "Caesar: pollo, queso, lechuga, queso de rallar y salsa caesar. Precio: $4500u",
-          "Crema de palta: pollo, queso, panceta crocante y ciboulette.",
-          "Vitel Toné: peceto, crema vitel toné y queso."
+          "Rúcula, Tomates secos, Base de queso. Precio: $4500u",
+          "Caesar: pollo, queso, lechuga, queso de rallar y salsa caesar. Precio: $5000u",
+          "Vitel Toné: peceto, crema vitel toné y queso. Precio: $5000u"
         ]
       }
     ],
@@ -365,100 +365,40 @@ tartas: [
 ],
 alfajores: [
   {
-    title: "Lunnettes",
-    slug: "lunnettes",
-    description: "Dulce de leche montado en forma de copete, cubierto con un intenso baño de chocolate semiamargo. Elegante y moderno.",
-    price: "xxxx",
-    priceGrande: "xxx",
-    priceChico: "xxx",
-    tags: ["Dulce de leche", "Chocolate", "Moderno"],
-    imageUrl: "assets/img/Alfajores/Lunnettes-Arriba.webp",
-    hoverImageUrl: "assets/img/Alfajores/Lunnettes-Costado.webp",
-    icon: ""
-  },
-  {
-    title: "Maicena",
-    slug: "maicena",
-    description: "Dos tapas de maicena rellenas con abundante dulce de leche, rebozadas en coco rallado. Clásico de siempre.",
-    price: "xxxx",
-    priceGrande: "xxxx x6",
-    priceChico: "xxx",
-    tags: ["Maicena", "Coco", "Dulce de leche"],
-    imageUrl: "assets/img/Alfajores/Maicena-Arriba.webp",
-    hoverImageUrl: "assets/img/Alfajores/Maicena-Costado.webp",
-    icon: ""
-  },
-  {
-    title: "Clásicos",
-    slug: "clasicos",
-    description: "Alfajores rellenos de dulce de leche y bañados en chocolate semiamargo. La versión artesanal del infaltable argentino.",
-    price: "xxxx",
-    priceGrande: "xxxx x6",
-    priceChico: "xxx",
-    tags: ["Chocolate", "Dulce de leche", "Tradicional"],
-    imageUrl: "assets/img/Alfajores/Clasicos-Arriba.webp",
-    hoverImageUrl: "assets/img/Alfajores/Clasicos-Costado.webp",
-    icon: ""
-  },
-  {
-    title: "Nuez",
-    slug: "nuez",
-    description: "Tapas con nuez molida, relleno de dulce de leche y una cobertura ligera de glasé. Suave y elegante.",
-    price: "xxxx",
-    priceGrande: "xxx",
-    priceChico: "xxx",
-    tags: ["Nuez", "Glasé", "Suave"],
-    imageUrl: "assets/img/Alfajores/Nuez-Arriba.webp",
-    hoverImageUrl: "assets/img/Alfajores/Nuez-Costado.webp",
-    icon: ""
-  },
-  {
-    title: "Membrillo",
-    slug: "membrillo",
-    description: "Dos suaves tapas rellenas de dulce de membrillo artesanal. Para los que aman lo tradicional.",
-    price: "xxxx",
-    priceGrande: "xxx",
-    priceChico: "xxx",
-    tags: ["Membrillo", "Tradicional", "Artesanal"],
-    imageUrl: "assets/img/Alfajores/Membrillo-Arriba.webp",
-    hoverImageUrl: "assets/img/Alfajores/Membrillo-Costado.webp",
-    icon: ""
-  },
-  {
-    title: "Marplatense Baño Chocolate",
-    slug: "marplatense-chocolate",
-    description: "Alfajor estilo marplatense con doble capa de galletita rellena de dulce de leche y baño de chocolate.",
-    price: "xxxx",
-    priceGrande: "xxx",
-    priceChico: "xxx",
-    tags: ["Marplatense", "Chocolate", "Galletita"],
-    imageUrl: "assets/img/Alfajores/Marplatense-Chocolate-Arriba.webp",
-    hoverImageUrl: "assets/img/Alfajores/Marplatense-Chocolate-Costado.webp",
-    icon: ""
-  },
-  {
-    title: "Marplatense Baño de Merengue",
-    slug: "marplatense-merengue",
-    description: "Versión marplatense con baño blanco de merengue. Textura suave, sabor delicado.",
-    price: "xxxx",
-    priceGrande: "xxx",
-    priceChico: "xxx",
-    tags: ["Merengue", "Marplatense", "Dulce de leche"],
-    imageUrl: "assets/img/Alfajores/Marplatense-Merengue-Arriba.webp",
-    hoverImageUrl: "assets/img/Alfajores/Marplatense-Merengue-Costado.webp",
-    icon: ""
-  },
-  {
-    title: "Frutos Rojos",
-    slug: "frutos-rojos",
-    description: "Relleno de frutos rojos naturales entre tapas suaves. Una opción frutada y diferente.",
-    price: "xxxx",
-    priceGrande: "xxx",
-    priceChico: "xxx",
-    tags: ["Frutos rojos", "Original", "Frutado"],
-    imageUrl: "assets/img/Alfajores/FrutosRojos-Arriba.webp",
-    hoverImageUrl: "assets/img/Alfajores/FrutosRojos-Costado.webp",
-    icon: ""
+    title: "Alfajores",
+    slug: "general",
+    imageUrl: "assets/img/Alfajor/Portada-Alfajores.webp",
+    hoverImageUrl: "assets/img/Alfajor/Portada-Alfajores.webp",
+    price:"",
+    gallery: [
+      "assets/img/Alfajor/Portada-Alfajores.webp",
+      "assets/img/Alfajor/maicena.webp",
+      "assets/img/Alfajor/manteca.webp",
+      "assets/img/Alfajor/marplablanco.webp",
+      "assets/img/Alfajor/box.webp",
+      "assets/img/Alfajor/marplanegro.webp",
+      "assets/img/Alfajor/nuez.webp"
+    ],
+    icon: "",
+    tabGroups: [
+      {
+        label: "Nuestros alfajores",
+        description: "Variedad artesanal, con rellenos abundantes y coberturas clásicas y modernas.",
+        price: {
+          Precio: "Consultar por whatsapp"
+        },
+        sabores: [
+          "Lunnettes: Dulce de leche montado con baño de chocolate semiamargo",
+          "Maicena: Tapas de maicena, dulce de leche y coco rallado",
+          "Clásicos: Dulce de leche con cobertura de chocolate semiamargo",
+          "Nuez: Tapas con nuez molida, glasé y relleno de dulce de leche",
+          "Membrillo: Tapas suaves con dulce de membrillo artesanal",
+          "Marplatense Chocolate: Doble galletita con dulce de leche y baño de chocolate",
+          "Marplatense Merengue: Versión con baño blanco de merengue",
+          "Frutos Rojos: Relleno de frutos rojos naturales"
+        ]
+      }
+    ]
   }
 ],
 cookies : [
@@ -478,12 +418,10 @@ cookies : [
     ],
     tabGroups: [
       {
-        label: "Nuestros alfajores",
+        label: "Nuestras galletitas",
         description: "Conocé algunos de nuestros mejores gustos:",
         price: {
-                docena: "XXX",
-                mediaDocena: "XXX",
-                unidad: "XXX"
+                Precio: "Consultar por whatsapp",
         },
         sabores: [
           "Red velvet",

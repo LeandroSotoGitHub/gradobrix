@@ -111,18 +111,18 @@ tortas: [
     hoverImageUrl: "assets/img/Tortas/Torta Mousse Maracuya/Torta-MousseMaracuya-Costado.webp",
     icon: ""
   },
-  {
-    title: "Mousse de Frutilla",
-    slug: "mousse-frutilla",
-    description: "Base de bizcochuelo de vainilla, almíbar de frutilla y mousse de frutilla.",
-    price: "40.000",
-    priceGrande: "45.000 (8 a 12 porciones)",
-    priceChico: "40.000 (6 a 8 porciones)",
-    tags: ["Frutilla", "Mousse", "Bizcochuelo"],
-    imageUrl: "assets/img/tortas/frutilla.webp",
-    hoverImageUrl: "",
-    icon: ""
-  },
+  // {
+  //   title: "Mousse de Frutilla",
+  //   slug: "mousse-frutilla",
+  //   description: "Base de bizcochuelo de vainilla, almíbar de frutilla y mousse de frutilla.",
+  //   price: "40.000",
+  //   priceGrande: "45.000 (8 a 12 porciones)",
+  //   priceChico: "40.000 (6 a 8 porciones)",
+  //   tags: ["Frutilla", "Mousse", "Bizcochuelo"],
+  //   imageUrl: "assets/img/tortas/frutilla.webp",
+  //   hoverImageUrl: "",
+  //   icon: ""
+  // },
   {
     title: "Choco Naranja",
     slug: "choco-naranja",

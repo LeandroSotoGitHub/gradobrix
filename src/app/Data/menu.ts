@@ -461,8 +461,7 @@ boulangerie: [
           "Fosforitos de jamón y queso"
         ],
         price: {
-          unidad: "xxx",
-          docena: "xxx"
+          Precio: "Consultános por WhatsApp",
         }
       },
       {
@@ -478,7 +477,7 @@ boulangerie: [
           "Cookies manteca de maní y confites de colores"
         ],
         price: {
-          bandeja: "xxx"
+          Precio: "Consultános por WhatsApp",
         }
       },
       {

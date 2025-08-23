@@ -9,6 +9,7 @@ import { SectionMenuComponent } from './Section-Menu/section-menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { WhatsappBTNComponent } from './whatsapp-btn/whatsapp-btn.component';
 import { BackBtnComponent } from './back-btn/back-btn.component';
+import { CarruselComponent } from './carrusel/carrusel.component';
 
 
 
@@ -21,7 +22,8 @@ import { BackBtnComponent } from './back-btn/back-btn.component';
     CardComponent,
     FooterComponent,
     WhatsappBTNComponent,
-    BackBtnComponent
+    BackBtnComponent,
+    CarruselComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,8 @@ import { BackBtnComponent } from './back-btn/back-btn.component';
     SectionMenuComponent,
     FooterComponent,
     WhatsappBTNComponent,
-    BackBtnComponent
+    BackBtnComponent,
+    CarruselComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

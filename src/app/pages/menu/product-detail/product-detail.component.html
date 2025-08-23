@@ -4,16 +4,12 @@
 <section class="product-detail" *ngIf="producto">
   <div class="detail-grid animate-on-scroll from-left">
     <div class="carrusel">
-      <swiper-container
-        slides-per-view="1"
-        autoplay='{"delay":2000,"disableOnInteraction":false}'
-        loop="true"
-        class="product-swiper"
->
-        <swiper-slide *ngFor="let img of producto.gallery || [producto.imageUrl, producto.hoverImageUrl]">
-          <img [src]="img" [alt]="producto.title" />
-        </swiper-slide>
-      </swiper-container>
+        <app-carrusel
+  [images]="imagesForCarousel"
+  [interval]="3000"
+  [autoplay]="true"
+  [loop]="true">
+</app-carrusel>
     </div>
 
     <div class="info-container">

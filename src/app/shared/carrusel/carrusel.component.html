@@ -1,0 +1,23 @@
+<div class="carousel" tabindex="0"
+     (touchstart)="onPointerDown($event)" (touchmove)="onPointerMove($event)" (touchend)="onPointerUp()"
+     (pointerdown)="onPointerDown($event)" (pointermove)="onPointerMove($event)" (pointerup)="onPointerUp()"
+     (mouseleave)="onPointerUp()">
+
+  <div class="carousel__viewport">
+    <div class="carousel__track" #track [style.transform]="'translateX(' + (-100*index) + '%)'">
+      <div class="carousel__slide" *ngFor="let img of images; let i = index">
+        <img [src]="img" [alt]="alt || ('Imagen ' + (i+1))" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel__nav prev" type="button" aria-label="Anterior" (click)="prev(); stopAutoplay()">‹</button>
+  <button class="carousel__nav next" type="button" aria-label="Siguiente" (click)="next(); stopAutoplay()">›</button>
+
+  <div class="carousel__dots" role="tablist" aria-label="Paginación">
+    <button *ngFor="let _ of images; let i = index"
+            class="dot" [class.active]="i === index"
+            role="tab" [attr.aria-selected]="i === index"
+            (click)="goTo(i); stopAutoplay()"></button>
+  </div>
+</div>

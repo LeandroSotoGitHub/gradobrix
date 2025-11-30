@@ -291,8 +291,6 @@ tartas: [
         label: "Triples Clásicos",
         description: "Nuestros sabores más tradicionales y pedidos: simples, ricos y perfectos para todos los gustos.",
         price: {
-                cuatroDocenas:"$100.000",
-                dosDocenas:"$50.000",
                 docena: "$25.000",
                 mediaDocena: "$12.500",
                 unidad: "$2.500"
@@ -310,8 +308,6 @@ tartas: [
         label: "Triples Especiales",
         description: "Una combinación de sabores únicos que elevan el clásico sándwich a otro nivel.",
         price: {
-                cuatroDocenas:"$140.000",
-                dosDocenas:"$70.000",
                 docena: "$35.000",
                 mediaDocena: "$17.500",
                 unidad: "$3.500"
@@ -539,7 +535,7 @@ cuadrados: [
           "Pasta frola de batata. Precio: $3.000",
           "Naranja. Precio: $2.000",
           "Limón. Precio: $2.000",
-          "Ricota. Precio: $3.500",
+          "Ricota. Precio: $4.500",
           "Stroisel de frutos rojos. Precio: $4.500",
           "Brownies con nuez y sin nuez. Precio: $3.500 & $3.200",
           "Carrot cake. Precio: $3.500",

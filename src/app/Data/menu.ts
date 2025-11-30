@@ -284,7 +284,7 @@ tartas: [
 ],
  "sanguches-de-miga": [
   {
-    title: "Sanguches de Miga",
+    title: "Sandwiches de Miga",
     slug: "general",
     tabGroups: [
       {

@@ -18,7 +18,7 @@ export class SectionMenuComponent implements AfterViewInit {
       isSingle: true,
     },
     {
-      title: 'Sanguches de miga',
+      title: 'Sandwich de miga',
       imageSrc: 'assets/img/Sandwich/sandwichmega.jpg',
       isSingle: true,
       slug: 'general',
